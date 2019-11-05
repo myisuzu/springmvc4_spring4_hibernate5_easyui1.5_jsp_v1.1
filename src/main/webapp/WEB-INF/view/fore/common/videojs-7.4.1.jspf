@@ -1,0 +1,14 @@
+<%@ page language="java" pageEncoding="UTF-8"%>
+
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resource/js/fore/videojs-7.4.1/css/video-js.min.css" />
+<script type="text/javascript" src="${pageContext.request.contextPath}/resource/js/fore/videojs-7.4.1/js/video.min.js"></script>
+
+<script type="text/javascript">
+	$(function() {
+		var myPlayer = videojs('my-video');
+		videojs("my-video").ready(function(){
+			var myPlayer = this;
+			//myPlayer.play();
+		});
+	});
+</script>

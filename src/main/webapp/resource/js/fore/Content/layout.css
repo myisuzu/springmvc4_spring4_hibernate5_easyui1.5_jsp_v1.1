@@ -1,0 +1,370 @@
+.cbp-hrmenu {
+	width: 100%;
+height: 60px;
+background: rgba(0,0,0,0.5);
+filter: alpha(opactiy=0.5);
+-moz-opacity: 0.5;
+-khtml-opacity: 0.5;
+	/*border-bottom:2px solid #ddd;*/
+    z-index:1000;
+    position:relative;
+}
+.horiz_menu{width:1100px;margin:0 auto;}
+.logo_nav{float:left;}
+.logo_nav a img{padding: 6px 8px;}
+/* general ul style */
+.cbp-hrmenu ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+    /*overflow: hidden;
+min-height: 75px;*/
+}
+
+/* first level ul style */
+.cbp-hrmenu .horiz_menu > ul{
+	width: auto;
+	float:left;
+	padding: 0 15px;
+    margin-left:150px;
+}
+.cbp-hrsub-inner{width:1200px;margin:0 auto;}
+.cbp-hrmenu .horiz_menu> ul > li {
+	display: inline-block;
+}
+
+.cbp-hrmenu .horiz_menu> ul > li > a {
+padding: 19px 10px;
+color: #fff;
+display: inline-block;
+font-size: 14px;
+}
+
+.cbp-hrmenu .horiz_menu> ul > li > a:hover {
+	color: #c3181f;
+	background: #fff;
+    text-decoration:none;
+}
+
+/* .horiz_menu> ul .cbp-hropen a,
+.horiz_menu> ul .cbp-hropen a:hover {
+	color: #fff;
+	background: #47a3da;
+}*/
+.horiz_menu> ul .cbp-hropen .at_present,
+.horiz_menu> ul .cbp-hropen.at_present{color: #fff;
+background: #c3181f; cursor:pointer;}
+
+/* sub-menu */
+.cbp-hrmenu .cbp-hrsub {
+	display: none;
+	position: absolute;
+	background: #f9f9f9;
+	width: 100%;
+	/*left: 0;*/
+    box-shadow: 5px 5px 7px #9F9F9F;
+    /*z-index:1000;
+    position:relative;*/
+}
+
+.cbp-hropen .cbp-hrsub {
+	display: block;
+}
+.cbp-hrmenu .cbp-hrsub-inner:before,
+.cbp-hrmenu .cbp-hrsub-inner:after {
+	content: " ";
+	display: table;
+}
+
+.cbp-hrmenu .cbp-hrsub-inner:after {
+	clear: both;
+}
+
+
+
+.cbp-hrsub h4 {
+	color: #afdefa;
+	padding: 2em 0 0.6em;
+	margin: 0;
+	font-size: 160%;
+	font-weight: 300;
+}
+#curriculum_tab,#curriculum_positiontab {
+
+}
+#curriculum_tab > ul > li,#curriculum_positiontab > ul > li {
+	width: 180px;
+	
+	font-size: 14px;
+font-weight: bold;
+	list-style-type: none;
+	display: block;
+	text-align: center;
+	
+	
+	position: relative;
+	border-right: none;
+    border:none;
+	/*opacity: .3;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+ filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);*/
+}
+#curriculum_tab > ul > li span,#curriculum_positiontab > ul > li span{
+	width: 180px;
+	height: 46px;
+	font-size: 14px;
+font-weight: bold;
+	list-style-type: none;
+	display: block;
+	text-align: left;
+	margin: auto;
+	padding: 0px 10px;
+	background:url("Images/depth_line.jpg"/*tpa=http://www.learnfuture.com/Content/Images/depth_line.jpg*/) bottom repeat-x;
+	position: relative;
+	line-height:46px;
+}
+@font-face {
+    font-family: 'FontAwesome';
+    src:url("duke/fonts/fontawesome-webfont.woff"/*tpa=http://www.learnfuture.com/Content/duke/fonts/fontawesome-webfont.woff*/);
+    src:url("duke/fonts/fontawesome-webfont.otf-#iefix"/*tpa=http://www.learnfuture.com/Content/duke/fonts/fontawesome-webfont.otf?#iefix*/) format('embedded-opentype'),
+        url("duke/fonts/fontawesome-webfont.svg-#iefix"/*tpa=http://www.learnfuture.com/Content/duke/fonts/fontawesome-webfont.svg?#iefix*/) format('embedded-opentype'),
+        url("duke/fonts/fontawesome-webfont.ttf-#iefix"/*tpa=http://www.learnfuture.com/Content/duke/fonts/fontawesome-webfont.ttf?#iefix*/) format('embedded-opentype');
+    font-weight:normal;font-style:normal;}
+[class^="icon-"],[class*=" icon-"]{font-family:FontAwesome;font-weight:normal;font-style:normal;text-decoration:inherit;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing: grayscale;*margin-right:.3em;
+}
+
+ .icon-yun:before {
+	content: "\F197"; 
+}
+.icon-infrastructure:before {
+	content: "\F198"; 
+}
+ .icon-development:before {
+	content: "\F199"; 
+}
+ .icon-international_certification:before {
+	content: "\F19A"; 
+}
+  .icon-office_skills:before {
+	content: "\F19B"; 
+}
+.icon-management_system:before {
+	content: "\F19C"; 
+}
+.icon-comprehensive_quality:before {
+	content: "\F19D"; 
+}
+.icon-commerce:before {
+	content: "\F19E"; 
+}
+ .icon-light:before {
+	content: "\F187"; 
+}
+
+  
+
+.gray_cloud{
+background:url("images/layout/yun.png"/*tpa=http://www.learnfuture.com/Content/images/layout/yun.png*/) bottom right no-repeat;
+background-position: 697px 154px;
+}
+
+
+.f_s_21 {
+font-size: 21px;
+margin-right:5px;
+}
+.nav_iocn{
+height: 28px;
+width: 28px;
+margin: 0px 10px;
+}
+.triangle_left {
+    width: 15px;
+   right:0px;
+   border-top: 8px solid transparent;
+border-right: 10px solid red;
+border-bottom: 8px solid transparent;
+height: 15px;position:absolute;
+}
+#curriculum_tab > ul > li.support,#curriculum_positiontab > ul > li.support {
+	background:#c3181f;
+	color: #fff;
+	cursor: pointer;
+}
+#curriculum_tab > ul > li.support:hover,#curriculum_positiontab > ul > li.support:hover{
+/*background:#f9f9f9;*/
+	color:#b51218;
+}
+#curriculum_tab > ul > li.selected,#curriculum_positiontab > ul > li.selected {
+	opacity: 1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+ filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+	/*border: 1px solid #ddd;*/
+	border-right: none;
+	z-index: 10;
+	background:url("Images/choice_bj.jpg"/*tpa=http://www.learnfuture.com/Content/Images/choice_bj.jpg*/) no-repeat; 
+	position: relative;
+	color:#b51218;
+    border-bottom:1px solid transparent;
+    border-top:1px solid transparent;
+
+}
+#curriculum_tab > ul > li.selected:hover,#curriculum_positiontab > ul > li.selected:hover {
+	opacity: 1;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+ filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+	/*border: 1px solid #ddd;*/
+	border-right: none;
+	z-index: 10;
+	background:url("Images/choice_bj_2.jpg"/*tpa=http://www.learnfuture.com/Content/Images/choice_bj_2.jpg*/) no-repeat; 
+	position: relative;
+	color:#fff;
+
+}
+#curriculum_tab > ul,#curriculum_positiontab > ul {
+	float: left;
+	width: 180px;
+	text-align: left;
+	display: block;
+	margin: auto 0;
+	padding: 0;
+	position: relative;
+padding-top: 20px;
+	background: #ddd;
+min-height: 370px;
+}
+#curriculum_tab  .lsattr,#curriculum_positiontab  .lsattr {
+	/*background: #f9f9f9;*/
+	margin-left: 180px;
+	min-height: 370px;
+	padding: 12px;
+	position: relative;
+	z-index: 9;
+	width: 1020px;
+}
+#curriculum_tab .lsattr h4,#curriculum_positiontab .lsattr h4 {
+	color: #800;
+	font-size: 1.2em;
+	border-bottom: 1px dotted #800;
+	padding-top: 5px;
+	margin-top: 0;
+}
+#loginForm label {
+	float: left;
+	width: 100px;
+	text-align: right;
+	clear: left;
+	margin-right: 15px;
+}
+#loginForm fieldset {
+	border: none;
+}
+#loginForm fieldset > div {
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+#loginForm #login {
+	margin-left: 115px;
+}
+
+.menu_list{
+	 border: 1px solid transparent;
+    float: left;
+    height: 106px;
+    margin: 0 7px 10px;
+    width: 318px;
+	}
+	.menu_list h2,.menu_list_2 h2{
+		font-size:14px;
+		color:#E54028;
+		border-bottom:1px solid #ddd;padding: 10px 8px;
+		}
+    .menu_list ul, .menu_list_2 ul {
+    overflow:hidden;
+    }
+		.menu_list ul li,.menu_list_2 ul li{
+			float: left;
+            list-style:none;
+padding: 0px 8px;
+border-left: 1px solid #ddd;
+line-height: 14px;
+margin-left: -1px;
+margin-bottom: 7px;
+			}
+.menu_list ul li a ,.menu_list_2 ul li a{
+			color:#666;font-size:12px; cursor:pointer;
+			}
+			.menu_list ul li a:hover,.menu_list_2 ul li a:hover{
+			color:#ec4446;font-size:12px;cursor:pointer; text-decoration:underline;
+			}
+
+ .arrows_right{
+          background:url("images/arrows_right.png"/*tpa=http://www.learnfuture.com/Content/images/arrows_right.png*/) no-repeat bottom;
+		  width: 20px;
+height: 20px;
+background-size: 12px;
+display: inline-block;
+        }
+		.menu_list_2{width: 380px;
+float: left;
+margin: 0px 7px 10px;}
+
+
+
+
+@media screen and (max-width: 52.75em) { 
+
+	.cbp-hrmenu {
+		font-size: 80%;
+	}
+
+}
+
+@media screen and (max-width: 43em) { 
+
+	.cbp-hrmenu {
+		font-size: 120%;
+		border: none;
+	}
+
+	.cbp-hrmenu .horiz_menu> ul,
+	.cbp-hrmenu .cbp-hrsub-inner {
+		width: 100%;
+		padding: 0;
+	}
+
+	.cbp-hrmenu .cbp-hrsub-inner {
+		padding: 0 2em;
+		font-size: 75%;
+	}
+
+	.cbp-hrmenu .horiz_menu> ul > li {
+		display: block;
+		border-bottom: 4px solid #47a3da;
+	}
+
+	.cbp-hrmenu .horiz_menu> ul > li > a { 
+		display: block;
+		padding: 1em 3em;
+	}
+
+	.cbp-hrmenu .cbp-hrsub { 
+		position: relative;
+	}
+
+	.cbp-hrsub h4 {
+		padding-top: 0.6em;
+	}
+
+}
+
+@media screen and (max-width: 36em) { 
+	.cbp-hrmenu .cbp-hrsub-inner > div {
+		width: 100%;
+		float: none;
+		padding: 0 2em;
+	}
+}
+
+
+

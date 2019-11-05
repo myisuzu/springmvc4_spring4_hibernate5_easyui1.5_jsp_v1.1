@@ -1,0 +1,298 @@
+﻿@charset "utf-8";
+body{margin:0;font-size:12px;color:#333;background:white;}
+input,textarea,select{margin:0;padding:0;font-size:12px;outline:none;resize:none;}
+html:root body,html:root input,html:root button,html:root textarea,html:root select{font-family:"微软雅黑",Tahoma,Geneva,'\5fae\8f6f\96c5\9ed1','\5B8B\4F53';}
+form,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,p{margin:0;padding:0;list-style:none;}
+a{text-decoration:none;color:#224892;outline:none;}
+a:hover{text-decoration:underline;}
+a img{border:none;}
+i,em{font-style:normal;}
+b{color:#F63;}
+button{cursor:pointer;}
+button i{display:none;}
+.login_head {min-width: 1200px;
+        height: 80px;
+        width: 100%;
+        border-bottom:2px solid rgb(183,183,183);
+        background: #fff;
+    }
+
+        .login_head img {
+            height: 45px;
+            margin: 15px 0px 0px 80px;
+            border: none;
+        }
+.text,textarea{font-size:14px;color:#333;border:1px solid;border-color:#CECECF;border-radius:0;background:white;
+               /*box-shadow:inset 1px 1px 2px rgba(0, 0, 0, 0.1);-webkit-appearance:none;*/
+
+}
+.text:focus,textarea:focus{outline:none;border-color:#92AFED;box-shadow:0 0 5px #92AFEC,inset 1px 1px 2px rgba(0, 0, 0, 0.1);}
+.text{}
+input.err,input.err:focus{color:#900;border-color:#E06341;background:#FFEFEC;box-shadow:0 0 5px #E06341;}
+textarea{width:270px;height:100px;padding:5px 9px;line-height:1.7;font-size:14px;overflow:auto;resize:none;}
+
+.button{display:inline-block;height:40px;padding:0 15px;line-height:40px;text-align:center;font-size:18px;font-family:"微软雅黑",Tahoma,Geneva,'\5fae\8f6f\96c5\9ed1','\5B8B\4F53';color:white;border:0 none;background-color:#167efb;background-repeat:repeat-x;background-position:0 0;cursor:pointer;}
+.button:hover{text-decoration:none;background-color:#1672e3;}
+.button:active{background-color:#3482e1;}
+.button .icon{position:relative;top:11px;vertical-align:top;font-weight:normal;}
+.button span{position:relative;top:11px;display:inline-block;height:16px;line-height:16px;vertical-align:top;padding-left:8px;}
+.button em{display:none;}
+.btn-gray{color:#666;background-color:#eee;}
+.btn-gray:hover{background-color:rgb(183,183,183);}
+.btn-gray:active{background-color:#e7e7e7;}
+.btn-green{height:50px;line-height:50px;background-color:#9ed04d;}
+.btn-green:hover{background-color:#76bf48;}
+.btn-green:active{background-color:#51b73d;}
+.btn-disabled,.btn-disabled:hover,.btn-disabled:active{background-color:#e7e7e7;color:#A1A1A1;}
+button.button{height:40px;padding:0 10px;line-height:normal;}
+
+/* wrap */
+.wrap{position:relative;z-index:0;height:600px;}
+.login_bj {
+background:url("../../images/login_bj_blue2.jpg"/*tpa=http://www.learnfuture.com/Content/images/login_bj_blue2.jpg*/) no-repeat center top;
+background-size:cover;height: 100%;width: 100%;
+overflow: hidden;
+}
+.banner-show{position:absolute;top:0;left:0;z-index:0;width:100%;min-width:980px;height:600px;overflow:hidden;}
+.banner-show .cell{position:absolute;top:0;left:0;width:100%;overflow:hidden;background-repeat:repeat-x;background-position:center top;}
+.banner-show .cell .con{position:relative;height:600px;background-repeat:no-repeat;background-position:center top;}
+.bns-01{background-image:url("../images/mid_banner/banner_01_repeat.png"/*tpa=http://www.learnfuture.com/Content/duke/images/mid_banner/banner_01_repeat.png*/);}
+.bns-01 .con{background-image:url("../images/mid_banner/banner_01.png"/*tpa=http://www.learnfuture.com/Content/duke/images/mid_banner//banner_01.png*/);}
+.bns-02{background-image:url("../images/mid_banner/banner_02_repeat.png"/*tpa=http://www.learnfuture.com/Content/duke/images/mid_banner/banner_02_repeat.png*/);}
+.bns-02 .con{background-image:url("../images/mid_banner/banner_02.png"/*tpa=http://www.learnfuture.com/Content/duke/images/mid_banner/banner_02.png*/);}
+.bns-03{background-image:url("../images/mid_banner/banner_03_repeat.png"/*tpa=http://www.learnfuture.com/Content/duke/images/mid_banner/banner_03_repeat.png*/);}
+.bns-03 .con{background-image:url("../images/mid_banner/banner_03.png"/*tpa=http://www.learnfuture.com/Content/duke/images/mid_banner/banner_03.png*/);}
+.banner-link{position:absolute;top:100px;left:50%;width:400px;height:400px;margin-left:-430px;}
+.banner-link i{display:none;}
+.banner-control{position:absolute;top:0;left:50%;width:1200px;margin-left:-490px;}
+.banner-control a{position:absolute;top:258px;width:30px;height:30px;line-height:10;overflow:hidden;background-image:url("../images/icon_control.png"/*tpa=http://www.learnfuture.com/Content/duke/images/icon_control.png*/);background-repeat:no-repeat;background-repeat:no-repeat;}
+.banner-control a.left{left:-55px;background-position:0 0;}
+.banner-control a.left:hover{background-position:0 -30px;}
+.banner-control a.right{right:-55px;background-position:-30px 0;}
+.banner-control a.right:hover{background-position:-30px -30px;}
+.container_login{position:relative;padding-top:4%;padding-bottom:4%;z-index:2;width:1200px;margin:0 auto;overflow: hidden;}
+.video_left {
+    width:742px;height:440px; float:left;
+}
+#footer2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #333;
+    background: #d8d8dc;
+}
+#footer2 p {
+    color: #333;
+    font-size: 12px;
+    padding: 2px 0;
+    margin: 0;
+}
+.footer2_box{
+position: relative;
+margin: 0px auto;
+height: 200px;
+width: 1200px;
+
+}
+.copyleft_box_login ul > li {
+    display: inline-block;
+    margin-right: 15px;
+}
+.copyright_box_login ul {
+    display:inline-block;
+}
+.copyright_box_login ul > li {
+    float:left;
+    display: inline-block;
+margin-right: 15px;
+}
+.copyleft_box_login p,.copyleft_box_login p a,.copyleft_box_login ul li a,.copyright_box_login ul > li a,.copyright_box_login ul > li p{
+    font-size:12px;color:#333;
+}
+.register-box{float: right;width:396px;height:470px;background:white;background:rgba(255, 255, 255, 0.95);box-shadow: 1px 3px 3px rgb(221, 221, 221);
+margin-right: 5px;}
+.reg-tab{position:relative;width:396px;height:57px;zoom:1;overflow:hidden;border-radius:3px 3px 0 0;}
+.reg-tab span{float:left;width:198px;height:57px;margin-left:-1px;line-height:57px;text-align:center;font-size:24px;color:#444;border-left:1px solid #d2d3d4;background:url("../images/bg_tab_x.png-v=201406241538"/*tpa=http://www.learnfuture.com/Content/duke/images/bg_tab_x.png?v=201406241538*/) repeat-x 0 0;cursor:pointer;}
+.reg-tab span:first-child{border-top-left-radius:3px;}
+.reg-tab span:last-child{border-top-right-radius:3px;}
+.reg-tab span.current{background:none;cursor:default;}
+.reg-slogan{height:50px;line-height:50px;text-align:center;font-size:16px;}
+.reg-form{width:328px;height:275px;margin:0 auto;}
+.reg-form .cell{position:relative;height:40px;margin-bottom:23px;zoom:1;}
+.reg-form .cell label{position:absolute;top:0;left:0;z-index:1;padding:0 12px;line-height:40px;font-size:16px;color:#999;font-weight:bold;cursor:text;}
+.reg-form .val label{left:-9999px;opacity:0!important;filter:alpha(opacity="0")!important;}
+.reg-form .cell .login_input{/*position:absolute;top:0;left:0;*/width:335px;padding-left: 40px;font-size:14px;height: 40px;font-weight:normal;border:1px solid rgb(183,183,183);border-radius:4px;}
+.reg-form .cell .icon-form{top:11px;right:10px;}
+    .reg-form .cell .error-message {
+        color: red;
+        text-align: left;
+        display:block;
+    }
+.auth_code {
+    height: 40px;border:1px solid rgb(183,183,183);width:110px;padding:6px 8px;margin-right:5px;border-radius:4px;
+}
+.invisibility {
+float:left;padding:0 10px; height:40px;line-height:40px;
+}
+.invisibility:hover {
+text-decoration:none ;
+}
+.reg-form .vcode .button{position:absolute;top:0;left:144px;width:182px;padding:0;font-size:14px;}
+.reg-form .vcode img{position:absolute;top:0;left:144px;width:110px;height:40px;}
+.reg-form .vcode span{position:absolute;top:0;left:264px;line-height:40px;font-size:14px;}
+.reg-form .vcode .icon-form{right:204px;}
+.reg-form .vcode .login-popup-hint{right:194px;}
+.reg-form .user-agreement{height:16px;margin-top:-22px;padding:18px 0;line-height:16px;}
+.reg-form .user-agreement input{float:left;width:14px;height:14px;margin:1px 5px 0 0;}
+.reg-form .bottom{height:40px;}
+.reg-form .bottom .button{display:block;border-radius:3px;}
+
+#lib_Tab1{
+	width:100%;
+	margin:0px;
+	padding:0px;
+	margin-bottom:15px;
+}
+/*Tab2*/
+#lib_Tab2{
+width:576px;
+margin:0px;
+padding:0px;
+margin-bottom:15px;
+}
+.lib_tabborder{
+}
+.lib_Menubox {
+height:50px;
+line-height:50px;
+	/*border-bottom: 1px solid rgb(183,183,183);*/
+	position:relative;}
+.lib_Menubox ul{
+	width:100%;
+	margin:0px;
+	padding:0px;
+	list-style:none; 
+	position:absolute; 
+	left:0; 
+	height:40px;
+	text-align:center;
+
+}
+.lib_Menubox li{
+	float: left;
+	display: block;
+	cursor: pointer;
+	width: 198px;
+	color: #949694;
+	font-weight: bold;
+	height:50px;
+	line-height:50px;
+	font-size: 16px;
+    border-bottom: 2px solid rgb(102,102,102);
+	/*border-left-style: solid;
+	border-left-width: 1px;
+	border-left-color: rgb(183,183,183);*/
+}
+.lib_tabborder li span{
+	width:100%;
+	height: 50px;
+	display:block;
+	line-height: 50px;
+	text-align:center;
+    font-size: 16px;
+}
+/*li#one1,li.tit_bj_left{
+	border:none;
+}*/
+li#one1 span{
+	background-image: url("../images/xuanxiangka/ico_01.jpg"/*tpa=http://www.learnfuture.com/Content/duke/images/xuanxiangka/ico_01.jpg*/);
+	background-repeat:no-repeat;
+	background-position: 90px center;
+}
+/**/
+li#one2 span{
+	background-image: url("../images/xuanxiangka/ico_02.jpg"/*tpa=http://www.learnfuture.com/Content/duke/images/xuanxiangka/ico_02.jpg*/);
+	background-repeat:no-repeat;
+	background-position: 90px center;
+}
+li#one3 span{
+	background-image: url("../images/xuanxiangka/ico_03.jpg"/*tpa=http://www.learnfuture.com/Content/duke/images/xuanxiangka/ico_03.jpg*/);
+	background-repeat:no-repeat;
+	background-position: 90px center;
+}
+
+
+/*  www.codefans.net */
+.lib_Menubox li.hover_login,li#one1.hover_login,li#one2.hover_login,li#one3.hover_login{
+	padding:0px;
+	width: 198px;
+	color:#C2181E;
+	background-image: url("../images/xuanxiangka/tit01_hover.jpg"/*tpa=http://www.learnfuture.com/Content/duke/images/xuanxiangka/tit01_hover.jpg*/);
+	background-repeat:no-repeat;
+	background-position: center top;
+    border-bottom: 3px solid rgb(185,8,16);
+}
+.lib_Contentbox{
+		clear: both;
+	margin-top: 0px;
+	border-top: none;
+	height: 181px;
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom:6px;
+
+}
+
+/*内容区*/
+.text_div{
+width:98%;
+height:auto;
+display:block;
+overflow:hidden;
+}
+.logo_icon {
+height: 32px;
+width: 32px;
+margin: 4px;
+position: absolute;
+z-index: 2;
+left: 0;
+
+}
+.code {
+ background:url("../images/yam.png"/*tpa=http://www.learnfuture.com/Content/duke/images/yam.png*/);
+ font-family:Arial;
+ font-style:italic;
+ color:#7e44d5;
+ font-size:28px;
+ padding:2px 3px;
+ letter-spacing:3px;
+ font-weight:bolder;
+ float:left;
+ cursor:pointer;
+ width:100px;
+ height: 40px;
+line-height: 40px;
+ text-align:center;
+ vertical-align:middle;border: 1px solid rgb(183,183,183);
+margin-left: 5px;
+}
+.other_ways_log_in {
+    margin:40px 20px;
+}
+.other_ways_log_in h3 {position: relative;margin-bottom: 30px; background: url("../images/line_hui.png"/*tpa=http://www.learnfuture.com/Content/duke/images/line_hui.png*/);width: 100%;height:1px;overflow: visible;}
+    .other_ways_log_in .s_title {
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        margin-left: -75px;
+        width: 150px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 400;
+        color: #666;
+        /*background: rgba(255, 255, 255, 0.95);*/
+       
+    }
+.other_ways_log_in .qq_wechat{
+height: 36px;
+padding: 0 10px;}

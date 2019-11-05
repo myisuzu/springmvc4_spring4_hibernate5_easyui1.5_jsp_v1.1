@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping package="com.myframework.sysmgr.domain">
+
+	<class name="User" table="t_system_user">
+		<!-- 公共字段 -->
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="sort" update="false"/>
+		<property name="enable" update="false"/>
+		<property name="addDate" column="add_date" update="false"/>
+		<property name="updateDate" column="update_date" />
+		<property name="remark" type="text"/>
+		<!-- 公共字段 -->
+		
+		<property name="username" update="false"/>
+		<property name="truename"/>
+		<property name="password"/>
+		
+		<!-- 用户角色多对多 -->
+		<set name="roleSet" table="t_system_user_role" lazy="false">
+			<key column="user_id"/>
+			<many-to-many class="Role" column="role_id"/>
+		</set>
+		
+	</class>
+	
+</hibernate-mapping>

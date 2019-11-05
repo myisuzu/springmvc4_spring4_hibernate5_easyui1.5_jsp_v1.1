@@ -1,0 +1,153 @@
+﻿/** {
+    font-size: 15px;
+}*/
+
+.online-bar {
+    width: 100%;
+    height: 45px;
+    background: #c62d2f;
+    color: #fff;
+    position: relative;
+    line-height: 45px;
+}
+
+.online-span {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.online-hour {
+    font-size: 15px;
+}
+
+.online-div {
+    width: 100%;
+    min-height:112px;
+    background: #f9f9f9;
+    color: #c62d2f;
+    position: relative;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.online-price {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.online-discount {
+    position: relative;
+    top: 8px;
+    margin-left: 30px;
+}
+
+.online-button {
+    background-color: #ffeff0;
+    border-color: #c62d2f;
+    border-width: 1px;
+    width: 120px;
+    height: 32px;
+}
+.online-button.disabled,
+    .online-button.disabled.active,
+    .online-button.disabled.focus,
+    .online-button.disabled:active,
+    .online-button.disabled:focus,
+    .online-button.disabled:hover,
+    .online-button[disabled],
+    .online-button[disabled].active,
+    .online-button[disabled].focus,
+    .online-button[disabled]:active,
+    .online-button[disabled]:focus,
+    .online-button[disabled]:hover,
+    fieldset[disabled] .online-button,
+    fieldset[disabled] .online-button.active,
+    fieldset[disabled] .online-button.focus,
+    fieldset[disabled] .online-button:active,
+    fieldset[disabled] .online-button:focus,
+    fieldset[disabled] .online-button:hover {
+        background-color: rgb(220,220,220);
+        border-color: rgb(137, 137, 137);
+        color:rgb(138,138,138);
+    }
+.button-bottom {
+    position: absolute;
+    bottom: 10px;
+}
+
+.button-offline {
+    position: absolute;
+    right: 8px;
+    top: 15px;
+}
+
+.offline-overflow {
+    width: 58%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+}
+
+.course-info {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 8px;
+    line-height: 34px;
+    height: 34px;
+    border-left-color: #c62d2f;
+    border-left-width: 6px;
+    border-left-style: solid;
+}
+
+.course-span {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.course-div {
+    margin: 10px 0 0 15px;
+}
+
+.course-des {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.ck-btn-new {
+    width: 86px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #c62d2f;
+    font-size: 14px;
+    color: #fff;
+}
+
+    .ck-btn-new:hover, .ck-btn-new:visited, .ck-btn-new:active, .ck-btn-new:after {
+        width: 86px;
+        height: 30px;
+        line-height: 30px;
+        background-color: #c62d2f;
+        font-size: 14px;
+        color: #fff;
+        text-decoration: none;
+    }
+
+.nav-tabs > li > a:hover {
+    background: #c62d2f;
+    color: #fff;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+    border: 0;
+    color: #fff;
+    background: #c62d2f;
+    position: relative;
+}
+.ck-page .curr{
+    border: 1px solid #c62d2f;
+    background: #c62d2f;
+}

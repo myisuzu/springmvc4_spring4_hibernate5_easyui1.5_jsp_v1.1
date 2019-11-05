@@ -1,0 +1,5 @@
+/*上传进度条样式*/
+.bar {
+    height: 18px;
+    background: green;
+}

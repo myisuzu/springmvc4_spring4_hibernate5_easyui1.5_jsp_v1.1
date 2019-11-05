@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping package="com.myframework.cms.domain">
+
+	<class name="Course" table="t_cms_course">
+	
+		<!-- 继承字段 -->
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="sort" update="false"/>
+		<property name="enable" update="false"/>
+		<property name="addDate" column="add_date" update="false"/>
+		<property name="updateDate" column="update_date" />
+		<property name="remark" type="text"/>
+		<property name="name"/>
+		<property name="url"/>
+		<property name="isParent" column="is_parent"/>
+		<many-to-one class="Course" name="parent" column="pid" lazy="false" />
+		<set name="children" lazy="false" order-by="sort" where="enable=0">
+			<key column="pid"/>
+			<one-to-many class="Course"/>
+		</set>
+		<!-- 继承字段 -->
+		
+		<property name="content" type="text"/>
+		
+	</class>
+	
+</hibernate-mapping>

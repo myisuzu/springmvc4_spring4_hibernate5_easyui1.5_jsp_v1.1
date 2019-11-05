@@ -1,0 +1,7 @@
+<%@ page language="java" pageEncoding="UTF-8"%>
+
+<script type="text/javascript" src="${pageContext.request.contextPath}/resource/js/back/common/ztree.js"></script>
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resource/js/back/jquery-ztree-3.5.15/zTreeStyle.css"/>
+<script	type="text/javascript" src="${pageContext.request.contextPath}/resource/js/back/jquery-ztree-3.5.15/jquery.ztree.core-3.5.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/resource/js/back/jquery-ztree-3.5.15/jquery.ztree.excheck-3.5.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/resource/js/back/jquery-ztree-3.5.15/jquery.ztree.exedit-3.5.js"></script>

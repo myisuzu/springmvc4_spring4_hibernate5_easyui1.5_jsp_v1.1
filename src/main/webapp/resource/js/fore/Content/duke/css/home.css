@@ -1,0 +1,4057 @@
+﻿.content {
+background:#f7f7f7;
+}
+.learning_model {
+    min-height:180px;
+}
+.learning_model .title {
+    text-align: center;
+}
+.learning_model .main {
+
+    font-size:14px;
+}
+.learning_model .main label{
+    font-size:14px;
+    font-weight:bold;
+}
+.learning_model .main span{
+    display:block;
+    padding:5px;
+    line-height:none;
+}
+    .guide li {
+        list-style: none;
+        font-size: 16px;
+        line-height: 50px;
+        height:60px;
+    }
+    .guide .left {
+        background: url("../images/company/4-01.png"/*tpa=http://www.learnfuture.com/Content/duke/images/company/4-01.png*/) no-repeat center;
+    }
+    .guide .right {
+        background: url("../images/company/5-01.png"/*tpa=http://www.learnfuture.com/Content/duke/images/company/5-01.png*/) no-repeat center;
+    }
+
+    .guide .late {
+        line-height: 60px;
+        background: url("../images/company/6-01.png"/*tpa=http://www.learnfuture.com/Content/duke/images/company/6-01.png*/) no-repeat center;
+    }
+
+    
+    #flexiselDemo1, #flexiselDemo2, #flexiselDemo3 {
+        display: none;
+    }
+
+    .nbs-flexisel-container {
+        position: relative;
+        max-width: 100%;
+    }
+
+    .nbs-flexisel-ul {
+        position: relative;
+        width: 99999px;
+        margin: 0px;
+        padding: 0px;
+        list-style-type: none;
+        text-align: center;
+    }
+
+    .nbs-flexisel-inner {
+        position: relative;
+        overflow: hidden;
+        float: left;
+        width: 100%;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+    }
+
+    .nbs-flexisel-item {
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        cursor: pointer;
+        position: relative;
+        line-height: 0px;
+    }
+
+        .nbs-flexisel-item img {
+            max-width: 100%;
+            cursor: pointer;
+            position: relative;
+            width:180px;
+            /*margin-top: 10px;
+            margin-bottom: 10px;*/
+        }
+
+    /*** Navigation ***/
+
+    .nbs-flexisel-nav-left,
+    .nbs-flexisel-nav-right {
+        padding: 5px 10px;
+        border-radius: 15px;
+        -moz-border-radius: 15px;
+        -webkit-border-radius: 15px;
+        position: absolute;
+        cursor: pointer;
+        z-index: 4;
+        top: 40%;
+        background: rgba(0,0,0,0.5);
+        color: #fff;
+    }
+
+    .nbs-flexisel-nav-left {
+        left: 10px;
+    }
+
+        .nbs-flexisel-nav-left:before {
+            content: "<";
+        }
+
+        .nbs-flexisel-nav-left.disabled {
+            opacity: 0.4;
+        }
+
+    .nbs-flexisel-nav-right {
+        right: 5px;
+    }
+
+        .nbs-flexisel-nav-right:before {
+            content: ">";
+        }
+
+        .nbs-flexisel-nav-right.disabled {
+            opacity: 0.4;
+        }
+
+
+
+    .partner {
+        background: #EFF3F5;
+        width:100%;
+        overflow:hidden;
+    }
+    .partner .nav-tabs {
+        background:none;
+        border-right:none;
+    }
+        .partner .nav-tabs > li {
+            margin-bottom: 10px;
+            border: 1px solid #EFF3F5;
+            margin-right: 12px;
+            border-radius: 20px;
+        }
+            .partner .nav-tabs > li > a {
+                background:none;
+            }
+            .partner .nav-tabs > li.active {
+                border: 1px solid #3498db;
+                border-radius:20px;
+            }
+                .partner .nav-tabs > li > a:hover{
+                    color: #3498db;
+                }
+
+            /*.partner .nav-tabs > li:hover {
+                color: #3498db;
+                border-radius: 20px;
+                border: 1px solid #3498db;
+            }*/
+            .partner .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+                border: 0;
+                background:none;
+                color: #3498db;
+                 position: relative;
+            }
+
+
+
+    .ck-slide ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.ck-slide {
+	position: relative;
+	overflow: hidden;
+        width: 1140px;
+    margin: 0 auto;
+    height:350px;
+
+}
+.ck-slide ul.ck-slide-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	margin: 0;
+    padding:0;
+}
+.ck-slide ul.ck-slide-wrapper li {
+	position: absolute; margin-top:0px;
+}
+.ck-slide ul.ck-slide-wrapper li a{
+	/*a标签是行内元素，宽高对a标签不起作用，这里必须添加line-height:0px;display:black，否则垂直滚动<li>之间会出现间隔*/
+	line-height:0px;
+	display:block;
+}
+.ck-slide .ck-prev, .ck-slide .ck-next {
+	position: absolute;
+	top: 50%;
+	z-index: 2;
+	width: 35px;
+	height: 70px;
+	margin-top: -35px;
+	border-radius: 3px;
+	opacity: .15;
+	background: red;
+	text-indent: -9999px;
+	background-repeat: no-repeat;
+	transition: opacity .2s linear 0s;
+}
+.ck-slide .ck-prev {
+	left: 5px;
+	background: url("../images/index/arrow-left.png"/*tpa=http://www.learnfuture.com/Content/duke/images/index/arrow-left.png*/) #000 50% no-repeat;
+}
+.ck-slide .ck-next {
+	right: 5px;
+	background: url("../images/index/arrow-right.png"/*tpa=http://www.learnfuture.com/Content/duke/images/index/arrow-right.png*/) #000 50% no-repeat;
+}
+
+
+/* 底部-长期服务客户广告轮播-1100px盒子下的 */
+
+    .new-ck-slide ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.new-ck-slide {
+	position: relative;
+	overflow: hidden;
+        width: 1100px;
+    margin: 0 auto;
+    height:350px;
+
+}
+.new-ck-slide ul.ck-slide-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	margin: 0;
+    padding:0;
+}
+.new-ck-slide ul.ck-slide-wrapper li {
+	position: absolute; margin-top:0px;
+}
+.new-ck-slide ul.ck-slide-wrapper li a{
+	/*a标签是行内元素，宽高对a标签不起作用，这里必须添加line-height:0px;display:black，否则垂直滚动<li>之间会出现间隔*/
+	line-height:0px;
+	display:block;
+}
+.new-ck-slide .ck-prev, .new-ck-slide .ck-next {
+	position: absolute;
+	top: 50%;
+	z-index: 2;
+	width: 35px;
+	height: 70px;
+	margin-top: -35px;
+	border-radius: 3px;
+	opacity: .15;
+	background: red;
+	text-indent: -9999px;
+	background-repeat: no-repeat;
+	transition: opacity .2s linear 0s;
+}
+
+.new-ck-slide img{
+    width:1100px;
+}
+.new-ck-slide .ck-prev {
+	left: 5px;
+	background: url("../images/index/arrow-left.png"/*tpa=http://www.learnfuture.com/Content/duke/images/index/arrow-left.png*/) #000 50% no-repeat;
+}
+.new-ck-slide .ck-next {
+	right: 5px;
+	background: url("../images/index/arrow-right.png"/*tpa=http://www.learnfuture.com/Content/duke/images/index/arrow-right.png*/) #000 50% no-repeat;
+}
+
+
+
+
+
+.ck-slidebox {
+	position: absolute;
+	left: 50%;
+	bottom: 12px;
+	z-index: 30;
+}
+.ck-slidebox ul {
+	height: 20px;
+	padding: 0 4px;
+	border-radius: 8px;
+	background: rgba(0,0,0,0.5);
+}
+.ck-slidebox ul li {
+	float: left;
+	height: 12px;
+	margin: 4px 4px;
+}
+.ck-slidebox ul li em {
+	display: block;
+	width: 12px;
+	height: 12px;
+	border-radius: 100%;
+	background-color: #fff;
+	text-indent: -9999px;
+	cursor: pointer;
+}
+.ck-slidebox ul li.current em {
+	background-color: #fe6500;
+}
+.ck-slidebox ul li em:hover {
+	background-color: #fe6500;
+}
+.img_12_s {
+width:1140px;
+/*padding:0 20px;*/
+}
+.memu_logo_box {
+z-index:3;
+background:rgba(0,0,0,0.5);
+filter:alpha(opactiy=0.5);
+      -moz-opacity:0.5;  
+      -khtml-opacity: 0.5;  
+     
+position: relative;
+top: 0px;
+width: 100%;
+}
+.top_6 {
+top:-60px;
+height: 290px;
+}
+.middle_module_box {
+    margin:0 auto;
+        width:1200px;
+}
+
+.homepage_title {
+    /*background:#b93522;*/
+    width:218px;
+   
+    margin: 20px auto 8px;
+  
+}
+.homepage_title  .homepage_title_red {
+  padding: 3px;
+border: 1px dashed #b93522;
+
+}
+
+.homepage_title  .boder_gray {
+border: 1px dashed #666666;
+}
+.homepage_title  .background_gray {
+background-color: #666666;
+}
+
+.homepage_title_caddy {
+      width:210px;
+    height:50px;  background:#b93522;
+  color:#fff;
+ padding: 13px 10px;
+ text-align:center;
+}
+.homepage_title  .homepage_title_red .homepage_title_caddy span{
+   
+  font-size:25px;
+  color:#fff;
+}
+.homepage_title  .homepage_title_red  .homepage_title_caddy a{
+   
+  font-size:15px;
+  color:#fff;
+}
+.homepage_subheading {
+    text-align:center;color:#000;
+    font-size:15px;
+}
+.o2o_earning_system ul {
+    overflow:hidden;padding-top: 15px;
+}
+.o2o_earning_system ul li {
+list-style:none;
+float:left;
+
+}
+.p_r_15 {
+padding-right:0 !important;
+}
+/*.course_category {
+width:288px;
+box-shadow: 2px 2px 3px #999;
+position:relative;
+}
+.homepage_img {
+width:288px;
+height:200px;
+}*/
+/*轮播*/
+
+#feature_lb {
+	position: relative;
+}
+#feature_lb .button {
+	 position: absolute; width: 1170px;top: 72px;  left: 0px
+}
+.lr_cut {
+    float:right;
+    width:100px;
+    padding: 0 10px;
+}
+#feature_lb .lr_cut .prev {
+	 text-indent: -9999px; width: 30px; display: block; background: url("../images/index/arrow-left.png"/*tpa=http://www.learnfuture.com/Content/duke/images/index/arrow-left.png*/) center no-repeat; float: left; height: 32px;top: -125px; 
+}
+#feature_lb  .lr_cut .next {
+	text-indent: -9999px; width: 30px; display: block; background: url("../images/index/arrow-right.png"/*tpa=http://www.learnfuture.com/Content/duke/images/index/arrow-right.png*/) center no-repeat; float: right; height: 32px;  top: -125px;
+}
+
+/*#feature .prev:hover {
+	background-position: center bottom
+}
+#feature .next:hover {
+	background-position: center bottom
+}*/
+.featureul {
+	 position: relative; padding-bottom: 0px; list-style-type: none; margin: 0px; padding-left: 0px; width: 2400px; padding-right: 0px; float: left;  padding-top: 0px; left: 0px
+}
+.featurebox {
+	 width: 290px;  float: left; height: 200px; overflow: hidden;
+}
+#botton-scroll {
+	z-index: 0;  margin: 0px auto; width:1170px; float: left; height: 200px; 
+}
+#block_lb {
+	z-index: 0;position: relative; margin: 0px auto; width: 1170px; padding-right: 0px; height: 200px; font-size: 70%; overflow: hidden; 
+}
+#block_lb .box {
+	margin: 0px 10px; width: 280px;  float: left; height: 200px; position: relative;
+}
+#block_lb .box p .homepage_img {
+	width: 280px;height: 200px; 
+}
+#block_lb .details_p {
+    position:absolute;
+    right:7px;
+    bottom:15px;
+}
+/*#block_lb .box .feature-title {
+	font-size: 140%; font-weight: normal
+}
+#block_lb .box .feature-thumb {
+	width: 285px; margin-bottom: 5px; float: left; height: 200px
+}*/
+
+.coaching {
+    width:100%;
+    /*height:405px;*/
+    /*background:url(/Content/duke/images/index/coaching_bj.png) no-repeat center;*/
+    
+}
+.coaching_box {
+    width:1100px;margin:0 auto;
+    padding-top: 2px;
+}
+.query_condition {
+width:750px;
+margin:0 auto;
+padding: 5px 0 0;
+}
+    .query_condition .course {
+        width:270px; height:42px;
+        border:1px solid #b93522;
+        background:white;
+        font-size:15px;
+        padding: 8px 8px;
+color: #333;margin-right:15px;
+    }
+    .query_condition .address_selection {
+           width:165px; height:42px;
+        border:1px solid #b93522;
+        background:white;
+        font-size:15px;
+        padding: 8px 8px;
+color: #333;margin-right:15px;
+    }
+    .query_condition .query_button_1 {
+    width:112px;height:42px;
+    background:#b93522;padding:8px; color:#fff;font-size:15px;border:none;margin-right:12px;
+    }
+        .query_condition .query_link_1 {
+    width:112px;height:42px;
+    background:#b93522;padding:11px; color:#fff;font-size:15px;border:none;margin-right:12px;
+    }
+      .query_condition .query_button_2 {
+    width:130px;height:42px;
+    background:#b93522;padding:3px; color:#fff;font-size:16px;border:none;
+    }
+            .query_condition .query_link_2 {
+    width:130px;height:42px;
+    background:#b93522;padding:11px; color:#fff;font-size:15px;border:none;
+    }
+.fast_track_entrance_see {
+    padding:4px 0;
+}
+.fast_track_entrance_see a{
+    padding:4px 3px;
+    color:#333;
+    font-size:15px;
+
+}
+.fast_track_entrance_see a:hover{
+    padding:4px 3px;
+    color:#e32408;
+    font-size:15px;
+
+}
+
+
+
+.shenzhen_north_course {
+height:260px;
+width:100%;
+overflow:hidden;
+}
+.shenzhen_north_course .the_first_ul{
+height: 260px;
+overflow:hidden;
+}
+.shenzhen_north_course .the_first_ul li {
+list-style:none;
+float:left;
+margin-right:4px;
+height:260px;
+background:#585858;
+}
+.shenzhen_north_course ul li {
+list-style:none;
+float:left;
+margin-right:5px;
+}
+.remove_right_f {
+    margin:0 !important;
+}
+
+    .shenzhen_north_course ul li .shenzhen_north_course_list .course_title_more {
+    width:271px;
+    height:38px;
+    color:#fff;
+    position: relative;
+    }
+    .shenzhen_north_course ul li .shenzhen_north_course_list .course_title_more span{
+text-align: center;
+font-size: 19px;
+font-weight: bold;
+color: black;
+display: block;
+padding: 7px 0;
+margin: 0 auto;
+background: #f7f7f7;
+    width: 251px;
+    }
+      .shenzhen_north_course ul li .shenzhen_north_course_list .course_title_more a{
+position:absolute;
+ text-decoration:underline;
+color:black;
+font-size:15px;
+right: 11px;
+top: 6px;
+    }
+    .shenzhen_north_course ul li .shenzhen_north_course_list .time_name .left_kc_mc{
+        float:left;
+        font-size:15px;
+        color:white;
+        text-decoration:underline;
+    }
+      .shenzhen_north_course ul li .shenzhen_north_course_list .time_name .left_kc_sj{
+        float:right;
+         font-size:15px;
+        color:white;
+        text-decoration:underline;
+    }
+    .shenzhen_north_course ul li .shenzhen_north_course_list ul li {
+    list-style:none;
+    clear:both;
+    width: 272px;
+    height:26px;
+    line-height:26px;
+    margin: 0;
+padding: 0 10px;
+margin-top:3px;
+    }
+ .shenzhen_north_course ul li .shenzhen_north_course_list .time_name {
+    overflow:hidden;
+height:40px;
+line-height:40px;
+    padding: 0 10px;
+}
+       .shenzhen_north_course ul li .shenzhen_north_course_list ul li a{
+    display:block;
+    float:left;
+    width:185px;
+    overflow:hidden;
+   white-space:nowrap;
+    text-overflow:ellipsis;
+    font-size:14px;
+    color:white;
+
+    }
+          .shenzhen_north_course ul li .shenzhen_north_course_list ul li a:hover{
+    display:block;
+    float:left;
+    width:185px;
+    overflow:hidden;
+   white-space:nowrap;
+    text-overflow:ellipsis;
+    font-size:14px;
+    color:#e32408;
+
+    }
+           .shenzhen_north_course ul li .shenzhen_north_course_list ul li span{
+    float:right;
+    font-size:14px;
+    color:white;
+
+    }
+
+
+
+/* 近期开班推荐【1100px盒子下】 */
+
+
+.offline-recommend {
+height:210px;
+width:100%;
+overflow:hidden;
+}
+.offline-recommend ul{
+height: 210px;
+overflow:hidden;
+}
+.offline-recommend ul li {
+list-style:none;
+float:left;
+margin-right:38.3px;
+}
+.offline-recommend ul li:nth-child(4) {
+list-style:none;
+float:left;
+margin-right:0px;
+}
+.remove_right_f {
+    margin:0 !important;
+}
+
+    .offline-recommend ul li .offline-recommend_list .course_title_more {
+    width:246px;
+    height:38px;
+    background:#3b3b3b;
+    color:#fff;
+    position: relative;
+    }
+    .offline-recommend ul li .offline-recommend_list .course_title_more span{
+text-align: center;
+font-size: 19px;
+font-weight: bold;
+color: #fff;
+display: block;
+padding: 7px 0;
+margin: 0 auto;
+    }
+      .offline-recommend ul li .offline-recommend_list .course_title_more a{
+position:absolute;
+ text-decoration:underline;
+color:#fff;
+font-size:15px;
+right: 11px;
+top: 6px;
+    }
+    .offline-recommend ul li .offline-recommend_list .time_name .left_kc_mc{
+        float:left;
+        font-size:15px;
+        color:#000;
+        text-decoration:underline;
+    }
+      .offline-recommend ul li .offline-recommend_list .time_name .left_kc_sj{
+        float:right;
+         font-size:15px;
+        color:#000;
+        text-decoration:underline;
+    }
+    .offline-recommend ul li .offline-recommend_list ul li {
+    list-style:none;
+    clear:both;
+    width: 246px;
+    height:26px;
+    line-height:26px;
+    margin: 0;
+padding: 0;
+    }
+ .offline-recommend ul li .offline-recommend_list .time_name {
+    overflow:hidden;
+height:40px;
+line-height:40px;
+}
+       .offline-recommend ul li .offline-recommend_list ul li a{
+    display:block;
+    float:left;
+    width:185px;
+    overflow:hidden;
+   white-space:nowrap;
+    text-overflow:ellipsis;
+    font-size:14px;
+    color:#000;
+
+    }
+          .offline-recommend ul li .offline-recommend_list ul li a:hover{
+
+
+    color:#e32408;
+
+    }
+           .offline-recommend ul li .offline-recommend_list ul li span{
+    float:right;
+    font-size:14px;
+    color:#000;
+
+    }
+
+.offline-recommend-new {
+    height:220px;
+width:100%;
+overflow:hidden;
+}
+.offline-recommend-new .oneside{
+    width:530px;height:100%;
+}
+.offline-recommend-new .oneside table{
+    width:100%;
+}
+.offline-recommend-new .oneside table td{
+    font-size:14px;
+    color:black;
+    text-align:center;
+    height:28px;
+    line-height:28px;
+}
+
+ /**最近开课*/
+.recent_classes {
+    width:100%;
+    height:330px;
+    background:url("../images/index/recent_classes_bj.jpg"/*tpa=http://www.learnfuture.com/Content/duke/images/index/recent_classes_bj.jpg*/)no-repeat center;
+       
+}
+.recent_classes_box {
+margin:0 auto;
+width:1200px;
+}
+.recent_classes_box ul li{
+float:left;
+list-style:none;
+margin:0 5px;
+}
+    .recent_classes_box ul li .recent_classes_list {
+    
+    width: 390px;
+overflow: hidden;
+padding: 20px 70px;
+    }
+    .recent_classes_box ul li .recent_classes_list h2{
+    font-size:20px;
+    color:#fff;
+    text-align:center;
+    border-bottom:1px solid #fff;
+    padding: 5px 0;
+margin: 10px 0;
+    }
+     .recent_classes_box ul li .recent_classes_list h2 img{
+    height:40px;width:40px;
+    padding:0 2px;
+    }
+.recent_classes_box ul li .recent_classes_list ul li{
+clear:both;
+list-style:none;
+line-height:32px;
+height:32px;
+}
+.recent_classes_box ul li .recent_classes_list ul li a span{
+color:#fff;
+font-size:15px;
+
+padding-right:5px;
+}
+.recent_classes_box ul li .recent_classes_list ul li a{
+color:#fff;
+font-size:15px;
+width:250px;
+overflow:hidden;
+white-space:nowrap;
+display: block;
+text-overflow:ellipsis;
+}
+.recent_classes_list a:focus,.recent_classes_list a:visited,.recent_classes_list a:active,.recent_classes_list a:hover {
+    color:#fff !important;
+    text-decoration:underline !important;
+}
+.more_promotion {
+color: #fff;
+text-align: center;
+width: 250px;
+display: inline-block;
+text-decoration:underline;
+}
+
+/**讲师团队*/
+.lecturer_team {
+width:100%;
+height:435px;
+background:url("../images/index/lecturer_team_bj.jpg"/*tpa=http://www.learnfuture.com/Content/duke/images/index/lecturer_team_bj.jpg*/)no-repeat center;
+   
+}
+
+.lecturer_team_box {
+width:1100px;
+margin:0 auto;
+height:435px;
+   
+}
+    .lecturer_team_box ul{
+overflow: hidden;
+margin-top: 50px;
+}
+    .lecturer_team_box ul li {
+        float:left;
+        list-style:none;
+        margin: 0 15px;
+    }
+.lecturer_team_title {
+    border-bottom:1px solid #b93522;
+    padding-top: 20px;
+}
+.lecturer_team_title h2{
+    border-bottom:4px solid #b93522;
+    font-size:33px;
+    color:#333;
+    margin:0 auto;
+    text-align:center;
+    width:562px;
+    font-weight: initial;
+padding: 7px 0;
+margin-bottom: -2px;
+}
+
+.lecturer_team_title.title-fill h2{
+ background-color: #b93522;
+    color: #fff;
+    font-size: 22px;
+    font-weight: initial;
+    margin: 0 auto -18px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+
+.about_instructor {
+width:265px;height:310px;
+
+position:relative;
+}
+    .about_instructor img {
+    width:265px;height:310px;
+
+    }
+    .about_instructor .describe_js{
+width:265px;
+height:150px;
+position:absolute;
+bottom:0;
+z-index:1;
+background:rgba(0,0,0,0.5);
+filter:alpha(opactiy=0.5);
+      -moz-opacity:0.5;  
+      -khtml-opacity: 0.5; 
+      padding:10px;
+      margin:0;
+      font-size:15px;
+      color:#fff;
+     display:none;
+}
+    /*图片轮播*/
+    .std {
+	display: none
+}
+.products-grid {
+	position: relative;
+	border-bottom-style: none
+}
+.last.products-grid {
+	border-bottom-width: 0px
+}
+
+.products-grid .product-name {
+	position: absolute;
+	text-align: left;
+	padding-bottom: 15px;
+	margin: 0px auto;
+	padding-left: 15px;
+	width: 265px;
+	bottom: 0px;
+	padding-right: 0px;
+	display: none;
+	background: url("../images/index/bg_col_main.png"/*tpa=http://www.learnfuture.com/Content/duke/images/index/bg_col_main.png*/) 0px 0px;
+	padding-top: 15px;
+	left: 0px
+}
+.products-grid .product-name .teacherName {
+	   font-size: 18px;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+.products-grid .product-name a {
+	text-decoration: none
+}
+.products-grid .product-name a:hover {
+	text-decoration: underline
+}
+.indent-col-main {
+	position: relative;
+	
+	padding-top: 21px;
+	width: 1200px;
+	margin: 10px auto;
+}
+.std .subtitle {
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px
+}
+.std ol.ol {
+	list-style-position: outside;
+	list-style-type: decimal;
+	padding-left: 1.5em
+}
+.std ul.disc {
+	list-style-position: outside;
+	list-style-type: disc;
+	margin: 0px 0px 10px;
+	padding-left: 18px
+}
+.std dl dt {
+	font-weight: bold
+}
+.std dl dd {
+	margin: 0px 0px 10px
+}
+.block-slider {
+	position: relative;
+	padding-bottom: 0px;
+	margin: 0px 0px 0px 1px;
+	padding-left: 0px;
+	width: 1200px;
+	padding-right: 0px;
+	overflow: hidden;
+	padding-top: 0px
+}
+
+
+
+.block-slider .box-top {
+	position: relative;
+	margin: 0px 35px 0px 0px;
+	width: 700px;
+	float: left;
+	height: 483px;
+	color: #616161;
+	font-size: 1.2em;
+	overflow: hidden;
+	left: 9px
+}
+.block-slider ul {
+	padding-bottom: 0px;
+	list-style-type: none;
+	margin: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	height: 310px;
+	overflow: hidden;
+	padding-top: 0px
+}
+.block-slider ul li {
+position: relative;
+padding-bottom: 0px;
+padding-left: 0px;
+width: 265px;
+padding-right: 0px;
+display: block;
+float: left;
+height: 310px;
+padding-top: 0px;
+}
+.block-slider ul li a {
+	display: block;
+	text-decoration: none
+}
+.block-slider ul li a:hover {
+	text-decoration: none
+}
+.products-grid {
+
+	position: relative
+}
+.last.products-grid {
+	border-bottom-width: 0px
+}
+.products-grid li.item_a {
+	text-align: center;
+	padding-bottom: 0px;
+	height: 310px;
+	width: 265px;
+	float: left;
+    padding:0 9px;
+}
+.products-grid li.first {
+	width: 265px
+}
+.products-grid li.last {
+	border-right-style: none;
+	width: 180px
+}
+.product-image-block {
+	position: relative;
+	margin: 0px auto;
+	width: 170px
+}
+.products-grid .product-image {
+	width: 265px;
+	display: block;
+	height: 310px;
+}
+.products-grid .product-image img{
+    width: 265px;
+   
+    height: 310px;
+}
+.products-grid .product-name {
+	position: absolute;
+	text-align: left;
+	margin: 0px auto;
+	width: 265px;
+	height:165px;
+	line-height:25px;
+	color:#fff;
+	font-size:12px;
+	bottom: 0px;
+	padding: 10px;
+	background: rgba(59,59,59,0.8);
+	filter: alpha(opactiy=0.8);
+	-moz-opacity: 0.8;
+	-khtml-opacity: 0.8;
+	left: 9px;
+    overflow:hidden;
+}
+.products-grid:after {
+	line-height: 0;
+	display: block;
+	height: 0px;
+	clear: both;
+	font-size: 0px;
+	overflow: hidden;
+	content: "."
+}
+#left_but {
+	/*z-index: 999;*/
+	position: absolute;
+	margin: 0px;
+	width: 16px;
+	background: url("../images/index/prev.gif"/*tpa=http://www.learnfuture.com/Content/duke/images/index/prev.gif*/) no-repeat left top;
+	height: 29px;
+	top: 161px;
+	cursor: pointer;
+	left:-16px
+}
+.over#left_but {
+	background: url("../images/index/prev_hover.gif"/*tpa=http://www.learnfuture.com/Content/duke/images/index/prev_hover.gif*/) no-repeat left top
+}
+#right_but {
+	position: absolute;
+	margin: 0px;
+	width: 16px;
+	background: url("../images/index/next.gif"/*tpa=http://www.learnfuture.com/Content/duke/images/index/next.gif*/) no-repeat left top;
+	height: 29px;
+	top: 161px;
+	cursor: pointer;
+	right: -16px
+}
+.over#right_but {
+	background: url("../images/index/next_hover.gif"/*tpa=http://www.learnfuture.com/Content/duke/images/index/next_hover.gif*/) no-repeat left top
+}
+
+
+.trigon_sort {
+background: rgba(0, 0, 0, 0) url("../images/index/transparent_triangle.png"/*tpa=http://www.learnfuture.com/Content/duke/images/index/transparent_triangle.png*/) no-repeat scroll left center;
+    color: #fff;
+    height: 115px;
+    left:0px;
+    margin-left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 125px;
+}
+
+    .trigon_sort a {
+    color: #fff;
+    display: inline-block;
+    font-size: 15px;
+    margin-left: -40px;
+    padding: 10px;
+    }
+    .trigon_sort p {
+    color: #fff;
+    display: inline-block;
+    font-size: 15px;
+    margin-left: -40px;
+    padding: 10px;
+    }
+.red_button {
+background:#c52d2f;color:#fff !important;
+
+}.red_button:hover{
+background:#ba292b;color:#fff;
+
+}
+
+/*推荐课程width=1200px的盒子模型下课程推荐轮播*/
+
+.videoReCommend-col-main {
+	position: relative;
+	
+	/*padding-top: 21px;*/
+	width: 1200px;
+	/*margin: 10px auto;*/
+}
+.videoReCommend-slider {
+	position: relative;
+	padding-bottom: 0px;
+	margin: 0px 0px 0px 1px;
+	padding-left: 0px;
+	width: 1200px;
+	padding-right: 0px;
+	overflow: hidden;
+	padding-top: 0px
+}
+
+#videoReCommend_left_but {
+	/*z-index: 999;*/
+	position: absolute;
+	margin: 0px;
+	width: 16px;
+	background: url("../images/index/prev.gif"/*tpa=http://www.learnfuture.com/Content/duke/images/index/prev.gif*/) no-repeat left top;
+	height: 29px;
+	top: 100px;
+	cursor: pointer;
+	left:-16px
+}
+.over#videoReCommend_left_but {
+	background: url("../images/index/prev_hover.gif"/*tpa=http://www.learnfuture.com/Content/duke/images/index/prev_hover.gif*/) no-repeat left top
+}
+#videoReCommend_right_but {
+	position: absolute;
+	margin: 0px;
+	width: 16px;
+	background: url("../images/index/next.gif"/*tpa=http://www.learnfuture.com/Content/duke/images/index/next.gif*/) no-repeat left top;
+	height: 29px;
+	top: 100px;
+	cursor: pointer;
+	right: -16px
+}
+.over#videoReCommend_right_but {
+	background: url("../images/index/next_hover.gif"/*tpa=http://www.learnfuture.com/Content/duke/images/index/next_hover.gif*/) no-repeat left top
+}
+
+
+#videoReCommend_slider_list {
+    overflow: hidden;
+	position: relative
+}
+.last#videoReCommend_slider_list {
+	border-bottom-width: 0px
+}
+#videoReCommend_slider_list li.item_a {
+	text-align: center;
+	padding-bottom: 0px;
+	height: 310px;
+	width: 300px;
+	float: left;
+}
+#videoReCommend_slider_list li.first {
+		width: 280px;
+height: 185px;
+position: relative;
+margin: 0 10px;
+}
+#videoReCommend_slider_list li.last {
+	border-right-style: none;
+	width: 180px
+}
+.product-image-block {
+	position: relative;
+	margin: 0px auto;
+	width: 170px
+}
+#videoReCommend_slider_list .product-image {
+	width: 280px;
+	display: block;
+	height: 200px;
+}
+#videoReCommend_slider_list .product-image img{
+    width: 280px;
+   margin:0px;
+    /*height: 200px;*/
+}
+#videoReCommend_slider_list .product-name {
+	position: absolute;
+	text-align: left;
+	margin: 0px auto;
+	width: 265px;
+	height:150px;
+	line-height:30px;
+	color:#fff;
+	font-size:14px;
+	bottom: 0px;
+	padding: 10px;
+	background: rgba(59,59,59,0.8);
+	filter: alpha(opactiy=0.8);
+	-moz-opacity: 0.8;
+	-khtml-opacity: 0.8;
+	left: 0px
+}
+#videoReCommend_slider_list:after {
+	line-height: 0;
+	display: block;
+	height: 0px;
+	clear: both;
+	font-size: 0px;
+	overflow: hidden;
+	content: "."
+}
+
+#videoReCommend_slider_list .details_p{
+  position: absolute;
+right: 15px;
+bottom: 12px;
+}
+
+#videoReCommend_slider_list .new-details_p{
+  position: absolute;
+right: 15px;
+bottom: 12px;
+}
+
+
+
+
+/*推荐课程width=1200px的盒子模型下课程推荐轮播*/
+
+.new-video-col-main {
+	position: relative;
+	
+	/*padding-top: 21px;*/
+	width: 1060px;
+	margin: 10px auto;
+}
+.new-video-slider {
+	position: relative;
+	padding-bottom: 0px;
+	margin: 0px 0px 0px 1px;
+	padding-left: 0px;
+	width: 1060px;
+	padding-right: 0px;
+	overflow: hidden;
+	padding-top: 0px
+}
+
+#new-video_left_but {
+	/*z-index: 999;*/
+	position: absolute;
+	margin: 0px;
+	width: 16px;
+	background: url("../images/index/prev.gif"/*tpa=http://www.learnfuture.com/Content/duke/images/index/prev.gif*/) no-repeat left top;
+	height: 29px;
+	top: 70px;
+	cursor: pointer;
+	left:-16px
+}
+.over#new-video_left_but {
+	background: url("../images/index/prev_hover.gif"/*tpa=http://www.learnfuture.com/Content/duke/images/index/prev_hover.gif*/) no-repeat left top
+}
+#new-video_right_but {
+	position: absolute;
+	margin: 0px;
+	width: 16px;
+	background: url("../images/index/next.gif"/*tpa=http://www.learnfuture.com/Content/duke/images/index/next.gif*/) no-repeat left top;
+	height: 29px;
+	top: 70px;
+	cursor: pointer;
+	right: -16px
+}
+.over#new-video_right_but {
+	background: url("../images/index/next_hover.gif"/*tpa=http://www.learnfuture.com/Content/duke/images/index/next_hover.gif*/) no-repeat left top
+}
+
+
+#new-video_slider_list {
+    overflow: hidden;
+	position: relative
+}
+.last#new-video_slider_list {
+	border-bottom-width: 0px
+}
+#new-video_slider_list li.item_a {
+	text-align: center;
+	padding-bottom: 0px;
+	height: 310px;
+	width: 300px;
+	float: left;
+    list-style:none;
+}
+#new-video_slider_list li.first {
+		width: 245px;
+height: 185px;
+position: relative;
+margin: 0 10px;
+}
+#new-video_slider_list li.last {
+	border-right-style: none;
+	width: 180px
+}
+.product-image-block {
+	position: relative;
+	margin: 0px auto;
+	width: 170px
+}
+#new-video_slider_list .product-image {
+	width: 245px;
+	display: block;
+	height: 200px;
+}
+#new-video_slider_list .product-image img{
+    width: 245px;
+   margin:0px;
+    /*height: 200px;*/
+}
+#new-video_slider_list .product-name {
+	position: absolute;
+	text-align: left;
+	margin: 0px auto;
+	width: 265px;
+	height:150px;
+	line-height:30px;
+	color:#fff;
+	font-size:14px;
+	bottom: 0px;
+	padding: 10px;
+	background: rgba(59,59,59,0.8);
+	filter: alpha(opactiy=0.8);
+	-moz-opacity: 0.8;
+	-khtml-opacity: 0.8;
+	left: 0px
+}
+#new-video_slider_list:after {
+	line-height: 0;
+	display: block;
+	height: 0px;
+	clear: both;
+	font-size: 0px;
+	overflow: hidden;
+	content: "."
+}
+
+#new-video_slider_list .details_p{
+  position: absolute;
+right: 8px;
+bottom: 29px;
+}
+
+#new-video_slider_list li.item_a .catename {
+background: rgba(0, 0, 0, 0) url("../images/index/transparent_triangle.png"/*tpa=http://www.learnfuture.com/Content/duke/images/index/transparent_triangle.png*/) no-repeat scroll left center;
+    color: #fff;
+    height: 115px;
+    left:0px;
+    margin-left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 125px;
+}
+
+    #new-video_slider_list li.item_a .catename a {
+    color: #fff;
+    display: inline-block;
+    font-size: 15px;
+    margin-left: -40px;
+    padding: 10px;
+    }
+    #new-video_slider_list li.item_a .catename p {
+    color: #fff;
+    display: inline-block;
+    font-size: 15px;
+    margin-left: -40px;
+    padding: 10px;
+    }
+
+
+
+
+    /*泛IT职业发展学习体系*/
+.pan_it_learning_system {
+    margin:0 auto;
+    width:1200px;
+    overflow: hidden;
+    height:440px;
+}
+.pan_it_learning_system_title {
+    border-bottom:1px solid #b93522;
+    padding-top: 20px;
+}
+.pan_it_learning_system_title h2{
+    border-bottom:4px solid #b93522;
+    font-size:33px;
+    color:#333;
+    margin:0 auto;
+    text-align:center;
+    width:330px;
+    font-weight: initial;
+padding: 7px 0;
+margin-bottom: -2px;
+}
+    .pan_it_learning_system ul li {
+    float:left;
+    list-style:none;
+    }
+        .pan_it_learning_system ul li .pan_it_learning_system_depict {
+        width:365px;
+        text-align:center;
+        margin: 25px 16px 0;
+        }
+        .pan_it_learning_system ul li .pan_it_learning_system_depict .learning_system_img{
+        width:235px;
+        height:235px;
+        text-align: center;
+        }
+            .pan_it_learning_system ul li .pan_it_learning_system_depict p {
+            font-size:15px;
+            color:#333333;
+            }
+            /**国际厂商*/
+.international_manufacturer_cooperation {
+    height:495px;
+    width:100%;
+    background:url("../images/index/International_manufacturer_cooperation_bj.png"/*tpa=http://www.learnfuture.com/Content/duke/images/index/International_manufacturer_cooperation_bj.png*/) no-repeat center;
+
+}
+.international_manufacturer_cooperation_box {
+    height:495px;
+    width:1200px;
+    margin:0 auto;
+  
+
+}
+.international_manufacturer_cooperation_title {
+    border-bottom:1px solid #fff;
+    padding-top: 20px;
+}
+.international_manufacturer_cooperation_title h2{
+    border-bottom:4px solid #fff;
+    font-size:33px;
+    color:#fff;
+    margin:0 auto;
+    text-align:center;
+    width:330px;
+    font-weight: initial;
+padding: 7px 0;
+margin-bottom: -2px;
+}
+.international_manufacturer_cooperation_box p {
+    font-size:15px;
+    color:#fff;
+    text-align:center;
+    padding:10px 0;
+}
+.international_manufacturer_cooperation_box .cooperates {
+   margin-top: 15px;
+}
+.long_term_client_title {
+    border-bottom:1px solid #b93522;
+    padding-top: 20px;
+}
+.long_term_client_title h2{
+    border-bottom:4px solid #b93522;
+    font-size:33px;
+    color:#333;
+    margin:0 auto;
+    text-align:center;
+    width:210px;
+    font-weight: initial;
+padding: 7px 0;
+margin-bottom: -2px;
+}
+.client_description {
+text-align:center;
+font-size:15px;
+color:#333;padding:10px 0;
+}
+/**弹窗*/
+.keifu{
+    position:fixed;top:10%;left:0;width:133px; _position:absolute;_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.bottom,10)||0)-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));
+ z-index:990;}
+.icon_keifu{width:26px;height:120px;float:left;background:url("../images/index/flowsmallimage.png"/*tpa=http://www.learnfuture.com/Content/duke/images/index/flowsmallimage.png*/) no-repeat;position:relative;display:none;cursor:pointer;}
+.keifu_box{float:left;width: 150px;
+height: 450px;position: relative;}
+.keifu_head{  
+ height: 11px;
+    position: absolute;
+    right: 3px;
+    top: 2px;
+    width: 22px;
+
+}
+.keifu_close:link,.keifu_close:visited{   
+
+    display: block;
+    height: 15px;
+    width: 15px;
+
+}
+.keifu_close:hover{background-position:-60px 0;}
+.capacity_left{
+	background: url("../images/index/flowimage.png"/*tpa=http://www.learnfuture.com/Content/duke/images/index/flowimage.png*/)no-repeat 5px; height: 450px; width: 150px;}
+
+
+/**置顶*/
+.btnimg{cursor:pointer;border:0;margin:0;padding:0;}
+
+#ScrollToTop{
+	position:fixed;_position:absolute;z-index:4;width:60px;padding:20px 10px 30px;display:block;right: 20px;
+bottom: 100px;
+width: 60px;
+height:70px;
+    background:url("../images/index/stick.png"/*tpa=http://www.learnfuture.com/Content/duke/images/index/stick.png*/) no-repeat center;
+	/*box-shadow:0 0 #fff, 0 1px 3px rgba(34,25,25,0.5);
+	-moz-box-shadow:0 0 #fff, 0 1px 3px rgba(34,25,25,0.5);
+	-webkit-box-shadow:0 0 #fff, 0 1px 3px rgba(34,25,25,0.5);
+	
+	-moz-transition:bottom 250ms ease-in-out;
+	-webkit-transition: bottom 250ms ease-in-out;*/
+}
+#ScrollToTop.Offscreen{
+	bottom:-100px;
+	-moz-transition-duration:250ms;
+	-webkit-transition-duration:250ms;
+}
+/* White Button */
+.Button2.WhiteButton{
+	background-color:#f0eded;
+	background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#fdfafb), to(#f0eded), color-stop(.5,#f9f7f7),color-stop(.5,#f6f3f4));
+	background-image:-moz-linear-gradient(top, #fdfafb, #f9f7f7 50%, #f6f3f4 50%, #f0eded);
+	background-image:-o-linear-gradient(top, #fdfafb, #f9f7f7 50%, #f6f3f4 50%, #f0eded);
+	background-image:-webkit-linear-gradient(top, #fdfafb, #f9f7f7 50%, #f6f3f4 50%, #f0eded);
+	border-color:#bbb;
+	color:#524d4d;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfafb', endColorstr='#f0eded');
+	text-shadow:0 1px rgba(255,255,255,0.9);
+}
+.Button2.WhiteButton:hover{
+	background-color:#f2f0f0;
+	background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#fdfcfc), to(#f2f0f0), color-stop(.5,#fbf9f9),color-stop(.5,#f7f5f6));
+	background-image:-moz-linear-gradient(top, #fdfcfc, #fbf9f9 50%, #f7f5f6 50%, #f2f0f0);
+	background-image:-o-linear-gradient(top, #fdfcfc, #fbf9f9 50%, #f7f5f6 50%, #f2f0f0);
+	background-image:-webkit-linear-gradient(top, #fdfcfc, #fbf9f9 50%, #f7f5f6 50%, #f2f0f0);
+	border-color:#c3c3c3;
+	color:#666060;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfcfc', endColorstr='#f2f0f0');
+	text-shadow:0 1px rgba(255,255,255,1);
+}
+.Button2.WhiteButton:active{
+	background-color:#ebe8e8;
+	background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#f8f4f5), to(#ebe8e8), color-stop(.5,#f3f0f0),color-stop(.5,#f1eeef));
+	background-image:-moz-linear-gradient(top, #f8f4f5, #f3f0f0 50%, #f1eeef 50%, #ebe8e8);
+	background-image:-o-linear-gradient(top, #f8f4f5, #f3f0f0 50%, #f1eeef 50%, #ebe8e8);
+	background-image:-webkit-linear-gradient(top, #f8f4f5, #f3f0f0 50%, #f1eeef 50%, #ebe8e8);
+	border-color:#b7b7b7;
+	color:#454141;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f8f4f5', endColorstr='#ebe8e8');
+	text-shadow:0 1px rgba(255,255,255,0.8);
+}
+/**线下课堂之线下开课信息*/
+.offline_classes {
+    width:100%;
+    /*height:428px;*/
+    background:url("../images/index/office/officecoursebackground.jpg"/*tpa=http://www.learnfuture.com/Content/duke/images/index/office/officecoursebackground.jpg*/) no-repeat center;
+    
+}
+.offline_classes_box {
+    width:1100px;margin:0 auto;
+    padding-top: 2px;
+}
+.offline_classes_title {
+    border-bottom:1px solid #b93522;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+.offline_classes_title h2{
+    border-bottom:4px solid #b93522;
+    font-size:33px;
+    color:#333;
+    margin:0 auto;
+    text-align:center;
+    width:210px;
+    font-weight: initial;
+padding: 7px 0;
+margin-bottom: -2px;
+}
+/*.query_condition {
+width:750px;
+margin:0 auto;
+padding: 5px 0 0;
+}
+    .query_condition .course {
+        width:270px; height:42px;
+        border:1px solid #b93522;
+        background:#e0e0e0;
+        font-size:15px;
+        padding: 8px 8px;
+color: #333;margin-right:15px;
+    }
+    .query_condition .address_selection {
+           width:165px; height:42px;
+        border:1px solid #b93522;
+        background:#e0e0e0;
+        font-size:15px;
+        padding: 8px 8px;
+color: #333;margin-right:15px;
+    }
+    .query_condition .query_button_1 {
+    width:112px;height:42px;
+    background:#b93522;padding:8px; color:#fff;font-size:15px;border:none;margin-right:12px;
+    }
+      .query_condition .query_button_2 {
+    width:110px;height:42px;
+    background:#b93522;padding:3px; color:#fff;font-size:15px;border:none;text-decoration: underline;
+    }
+          .query_condition .query_button_2 img{
+    margin: 2px 4px;
+    }*/
+.fast_track_entrance_see_white {
+    padding:4px 0;
+}
+.fast_track_entrance_see_white a{
+    padding:4px 3px;
+    color:#333;
+    font-size:15px;
+
+}
+.fast_track_entrance_see_white a:hover{
+    padding:4px 3px;
+    color:#e32408;
+    font-size:15px;
+
+}
+.shenzhen_north_course2 {
+height:224px;
+width:100%;
+overflow:hidden;
+}
+.shenzhen_north_course2 ul{
+height: 223px;
+overflow:hidden;
+}
+.shenzhen_north_course2 ul li {
+list-style:none;
+float:left;
+margin-right:5px;
+}
+.shenzhen_north_course2 ul li:last-child{
+    margin-right:0!important;
+}
+.remove_right_f2 {
+    margin:0 !important;
+}
+.replace_the_bj2 {
+background:#686868 !important;
+}
+.shenzhen_north_course_list2 {
+    background:#3b3b3b;
+    background:rgba(59,59,59,0.8);
+filter:alpha(opactiy=0.8);
+      -moz-opacity:0.8;  
+      -khtml-opacity: 0.8; 
+      padding:10px;
+      height:240px;
+}
+    .shenzhen_north_course2 ul li .shenzhen_north_course_list2 .course_title_more2 {
+    width:251px;
+    height:38px;
+    background:#f7f7f7;
+    color:#000;
+    position: relative;
+    }
+    .shenzhen_north_course2 ul li .shenzhen_north_course_list2 .course_title_more2 span{
+text-align: center;
+font-size: 19px;
+font-weight: bold;
+color: #000;
+display: block;
+padding: 7px 0;
+margin: 0 auto;
+    }
+      .shenzhen_north_course2 ul li .shenzhen_north_course_list2 .course_title_more2 a{
+position:absolute;
+ text-decoration:underline;
+color:#000;
+font-size:15px;
+right: 11px;
+top: 6px;
+    }
+    .shenzhen_north_course2 ul li .shenzhen_north_course_list2 .time_name2 .left_kc_mc2{
+        float:left;
+        font-size:15px;
+        color:#fff;
+        text-decoration:underline;
+    }
+      .shenzhen_north_course2 ul li .shenzhen_north_course_list2 .time_name2 .left_kc_sj2{
+        float:right;
+         font-size:15px;
+        color:#fff;
+        text-decoration:underline;
+    }
+    .shenzhen_north_course2 ul li .shenzhen_north_course_list2 ul li {
+    list-style:none;
+    clear:both;
+    width: 251px;
+    height:26px;
+    line-height:26px;
+    margin: 0;
+padding: 0;
+    }
+ .shenzhen_north_course2 ul li .shenzhen_north_course_list2 .time_name2 {
+    overflow:hidden;
+height:40px;
+line-height:40px;
+}
+       .shenzhen_north_course2 ul li .shenzhen_north_course_list2 ul li a{
+    display:block;
+    float:left;
+    width:189px;
+    overflow:hidden;
+   white-space:nowrap;
+    text-overflow:ellipsis;
+    font-size:14px;
+    color:#fff;
+
+    }
+          .shenzhen_north_course2 ul li .shenzhen_north_course_list2 ul li a:hover{
+    display:block;
+    float:left;
+    width:189px;
+    overflow:hidden;
+   white-space:nowrap;
+    text-overflow:ellipsis;
+    font-size:14px;
+    color:#e32408;
+
+    }
+           .shenzhen_north_course2 ul li .shenzhen_north_course_list2 ul li span{
+    float:right;
+    font-size:14px;
+    color:#fff;
+
+    }
+           /**四个广告区*/
+.the_four_ads {
+/*background:#fff;*/
+height:215px;
+width:1100px;
+margin-left:auto;
+margin-right:auto;
+}
+.the_four_ads_box {
+margin:0 auto;
+overflow:hidden;
+height:205px;
+width:1100px;
+padding-left:5px;
+}
+    .the_four_ads_box ul li {
+    list-style:none;
+    float:left;
+    }
+    .the_four_ads_box ul {
+    margin:0;
+    }
+ .the_four_ads_box ul li .ad_image {
+position:relative;
+height:172px;margin-top: 30px;
+width:258px;margin-right: 20px;box-shadow: 2px 3px 3px #ccc;
+
+}
+ .the_four_ads_box ul li .ad_image img{
+
+height:172px;
+width:258px;
+
+}
+ .the_four_ads_box ul li .ad_image .listening_test_rb {
+position:absolute;
+right:10px;
+bottom:8px;
+}
+/*企业定制服务*/
+.enterprise_custom_service {
+    background:url("../images/index/office/new_before_after_training.jpg"/*tpa=http://www.learnfuture.com/Content/duke/images/index/office/new_before_after_training.jpg*/) no-repeat bottom;
+width:100%;
+height:460px;
+}
+.enterprise_custom_service_box {
+    margin:0 auto;
+width:1100px;
+
+}
+.before_after_training {
+    width:1200px;
+    height:360px;
+    vertical-align:middle;
+}
+/*国际认证考试服务*/
+.international_it_certification_service {
+margin:0 auto;
+width:1100px;
+}
+    .international_it_certification_service ul {
+    overflow:hidden;
+    }
+.international_it_certification_service  ul li{
+list-style:none;
+float:left;
+padding-right:22px;
+}
+.international_it_certification_service  ul li:last-child{
+    padding-right:0!important;
+}
+
+.international_it_certification_service  ul li a img{
+width:258px;
+height:172px;
+}
+/*专业教室租凭*/
+.rental_of_the_classroom {
+width:1100px;
+margin:0 auto;
+height: 530px;
+}
+.rental_of_the_classroom_box {
+position:relative;
+height:575px;
+}
+.rental_of_the_classroom p{
+    position: absolute; color: white; 
+    font-size:14px;
+}
+.classroom_img1 {
+position: relative;
+top: 10px;
+margin: 0 auto;
+width: 982px;
+}
+.classroom_img1 ul li {
+list-style:none;
+float:left;
+}
+.classroom_img2 {
+text-align: center;
+margin: 0 auto;
+position: absolute;
+top: 174px;
+left: 0;
+}
+    .left_sharp_corner {
+   top: 174px;
+    left: -52px;
+background: url("../images/index/offline_classes/left_sharp_corner.png"/*tpa=http://www.learnfuture.com/Content/duke/images/index/offline_classes/left_sharp_corner.png*/) no-repeat;
+height: 325px;
+width: 52px;
+position: absolute;
+    }
+       .right_sharp_corner {
+   top: 174px;
+    right: -46px;
+background: url("../images/index/offline_classes/right_sharp_corner.png"/*tpa=http://www.learnfuture.com/Content/duke/images/index/offline_classes/right_sharp_corner.png*/) no-repeat;
+height: 325px;
+width: 52px;
+position: absolute;
+    }
+.classroom_img2 ul li {
+list-style:none;
+float:left;
+}
+.classroom_anchor_text {
+    background:url("../images/index/offline_classes/red_classroom.png"/*tpa=http://www.learnfuture.com/Content/duke/images/index/offline_classes/red_classroom.png*/)no-repeat;
+    width:325px;
+    height:325px;
+    font-size:15px;
+    color:#fff;
+    text-align:center;
+    display: inline-block;
+    padding: 80px;
+}
+.classroom_anchor_text:hover {
+    background:url("../images/index/offline_classes/red_classroom.png"/*tpa=http://www.learnfuture.com/Content/duke/images/index/offline_classes/red_classroom.png*/)no-repeat;
+    width:325px;
+    height:325px;
+    font-size:15px;
+    color:#fff;
+    text-align:center;
+    display: inline-block;
+    padding: 80px;
+}
+.bjing_seat {
+background:url("../images/index/offline_classes/bjing_seat.png"/*tpa=http://www.learnfuture.com/Content/duke/images/index/offline_classes/bjing_seat.png*/)no-repeat;
+    width:210px;
+    height:27px;
+    position:absolute;    
+    top: 30px;
+left: 70px;
+z-index: 2;
+}.shanghai_seat {
+background:url("../images/index/offline_classes/shanghai_seat.png"/*tpa=http://www.learnfuture.com/Content/duke/images/index/offline_classes/shanghai_seat.png*/)no-repeat;
+    width:210px;
+    height:27px;
+    position:absolute;    
+bottom: 90px;
+left: 235px;
+z-index: 2;
+}
+ .shenz_seat {
+background:url("../images/index/offline_classes/shenz_seat.png"/*tpa=http://www.learnfuture.com/Content/duke/images/index/offline_classes/shenz_seat.png*/)no-repeat;
+    width:210px;
+    height:27px;
+    position:absolute;    
+   right:80px;
+top: 30px;
+z-index: 2;
+}
+ .guangz_seat {
+background:url("../images/index/offline_classes/guangz_seat.png"/*tpa=http://www.learnfuture.com/Content/duke/images/index/offline_classes/guangz_seat.png*/)no-repeat;
+    width:210px;
+    height:27px;
+    position:absolute;    
+    bottom: 92px;
+right: 245px;
+z-index: 2;
+}
+/*主题课程推荐*/
+.course_recommended {
+width:1100px;
+height:490px;
+margin: 10px auto 0;
+}
+.course_recommended .subject_curriculum_recommended {
+width:695px;
+float:left;
+}
+.course_recommended .subject_curriculum_recommended h2{
+width:695px;
+height:44px;
+background:#c1181e;
+font-size:18px;
+color:#fff;margin: 0;
+padding: 10px;
+}
+.title_gray {
+    height:47px;
+background:#686868;
+font-size:18px;
+color:#fff;margin: 0;
+padding: 14px 10px;
+}
+.topic_selection {
+    width:340px;
+    margin-top: 10px;
+}
+.topic_selection ul li:nth-child(odd){
+    width:338px;
+list-style:none;
+height:37px;
+font-size:15px;
+color:#666;padding:10px;
+background:#ffe5e6;
+position:relative;
+}
+
+.topic_selection ul li .sub-menu {
+   background-color: #f1f1f1;
+    border: 1px solid #666;
+    display: none;
+    left: 340px;
+    min-width: 200px;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+
+    -webkit-box-shadow: 3px 3px 3px;  
+  -moz-box-shadow: 3px 3px 3px;  
+  box-shadow: 3px 3px 3px; 
+}
+
+.topic_selection ul li .sub-menu dt {
+ font-weight: normal;
+    padding: 5px 10px;
+     white-space: nowrap;
+        word-break: keep-all;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        /*width:300px;*/
+}
+
+.topic_selection ul li .sub-menu dt a {
+
+}
+
+.topic_selection ul li:hover .sub-menu {
+ display:block;
+}
+
+
+
+.topic_selection ul li:nth-child(even){
+    width:338px;
+list-style:none;
+height:37px;
+background:#fff;
+font-size:15px;
+color:#666;padding:10px;
+position:relative;
+}
+    .topic_selection ul li span {
+       /*background: url(/Content/duke/images/index/office/plus_sign.png) no-repeat center center;*/
+float: right;
+height: 25px;
+width: 15px;
+cursor:pointer;
+    }
+     /*.topic_selection ul li span:hover {
+       background: url(/Content/duke/images/index/office/minus.png) no-repeat center center;
+float: right;
+height: 25px;
+width: 35px;
+cursor:pointer;
+    }*/
+.float_right {
+float:right;
+}
+.float_left {
+float:left;
+}
+.successful_stories {
+width:380px;
+float:right;
+}
+ .successful_stories ul {height: 385px;
+overflow: hidden;
+}
+    .successful_stories ul li {
+    list-style:none;
+    height:40px;
+    line-height:35px;
+    background:url("../images/index/office/dark_spot.png"/*tpa=http://www.learnfuture.com/Content/duke/images/index/office/dark_spot.png*/) no-repeat left;
+   display: block;
+text-overflow: ellipsis;
+overflow: hidden;
+width: 380px;
+white-space: nowrap;
+border-bottom:1px solid #c8c8c8;
+    }
+    .successful_stories ul li:last-child{
+border-bottom:none!important;
+    }
+    .successful_stories ul li a{
+    color:#191919;font-size:14px;
+    padding-left:10px;
+    }
+       .successful_stories ul li a:hover{
+    color:#e32408;font-size:14px;
+    padding-left:10px;
+    }
+.online_to_offline_entrance {
+overflow:hidden;
+}
+.online_to_offline_entrance .red_online_to_offline {
+float:left;
+}
+.red_online_to_offline {
+width:185px;
+height:65px;
+background:#c1181e;
+font-size:18px;
+color:#fff;
+padding: 7px;
+text-align: center;
+}
+.red_online_to_offline a {
+width:225px;
+height:65px;
+background:#c1181e;
+font-size:18px;
+color:#fff;
+padding: 7px;
+text-align: center;
+}
+.margin_10{
+margin-right:10px;
+}
+.red_online_to_offline img{
+
+padding-right:5px;
+}
+.successful_stories_gray {
+    height: 47px;
+background: #686868;
+font-size: 18px;
+color: #fff;
+margin-top: 10px;
+padding: 14px 10px;
+width:380px;
+}
+/*热门视频推荐*/
+.popular_video_recommended {
+    width:1100px;
+    height:417px;
+    margin:0 auto;
+    background:#f2f2f2;
+}
+.popular_video_recommended_box {
+width:1100px;
+margin:0 auto;
+position:relative;
+}
+    .popular_video_recommended_box .popular_video_recommended_title {
+        border-bottom: 1px solid #b93522;
+    padding-top: 8px;
+    /*margin-bottom: 20px;*/
+
+    }
+      .popular_video_recommended_box .popular_video_recommended_title h2{
+     border-bottom: 4px solid #b93522;
+font-size: 24px;
+color: #333;
+margin: 0 auto;
+text-align: center;
+width: 160px;
+font-weight: initial;
+padding: 7px 0;
+margin-bottom: -2px;
+
+    }
+    .popular_video_recommended_box .video_display_left {
+        float:left;
+        width:475px;
+        
+    }
+.office_more {
+color: #fff;
+    display: inherit;
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 8px 10px 15px;
+    text-align: center;
+    text-decoration: underline;
+    width: 80px;
+}
+.office_more:hover {
+font-size: 20px;
+color: #e32408;
+text-align: center;
+text-decoration: underline;
+width: 80px;
+margin: 0 auto;
+display: inherit;
+}
+     .popular_video_recommended_box .video_resource_list_right {
+        float:right;
+        width:625px;
+        
+    }
+.video_resource_list_right ul {
+    padding:0 5px;
+    margin:0;
+}
+.video_resource_list_right ul li {
+float:left;
+list-style:none;margin: 0 15px 0 0;
+}
+.video_resource_list_right ul li:nth-child(3){
+    margin-right:0!important;
+}
+.video_resource_list_right ul li:nth-child(6){
+    margin-right:0!important;
+}
+.video_gather {
+    width:195px;
+    height:155px;
+}
+    .video_gather p {
+    padding:0;
+    margin:0;
+    }
+    .video_gather p img {
+    width:195px;height:130px;
+    }
+      .video_gather a {
+    width:195px;height:23px;font-size:14px;
+    color:black;
+    line-height:23px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+   white-space: nowrap;
+display: block;
+    }
+          .video_gather a:hover {
+    width:195px;height:23px;font-size:14px;
+    color:#e32408;
+    line-height:23px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+   white-space: nowrap;
+display: block;
+    }
+/*Office专区-办公技能订阅包*/
+.office_cooperation {
+    height:150px;
+    width:1100px;
+    background:url("../images/index/office/office_bookingbag.jpg"/*tpa=http://www.learnfuture.com/Content/duke/images/index/office/office_bookingbag.jpg*/) no-repeat center;
+    margin:0 auto;
+
+}
+.office_cooperation a{
+     display: block;
+    height: 150px;
+    width: 100%;
+}
+.office_tool {
+    height:311px;
+    width:1100px;
+    margin:0 auto;
+    background:url("../images/index/office/tools.jpg"/*tpa=http://www.learnfuture.com/Content/duke/images/index/office/tools.jpg*/) no-repeat center;
+
+}
+.office_tool a{
+     display: table;
+    height: 311px;
+    width: 100%;
+}
+/**助力企业发展*/
+.corporate_development_office {
+    width:100%;
+    height:495px;
+    background:url("../images/index/office/corporate_development_bj.jpg"/*tpa=http://www.learnfuture.com/Content/duke/images/index/office/corporate_development_bj.jpg*/) no-repeat center;
+
+}
+.corporate_development_office_box {
+width:1200px;
+height:495px;
+margin:0 auto;
+}
+.corporate_development_office_title {
+    border-bottom:1px solid #fff;
+
+}
+.corporate_development_office_box h2 {
+border-bottom:3px solid #fff;
+font-size:32px;
+color:#fff;
+text-align:center;padding: 25px 0 10px;
+margin: 0 auto;
+width: 433px;
+}
+.corporate_development_office_box  .subheading {
+    font-size:15px;
+    color:#fff;
+    text-align:center;
+}
+.corporate_development_office_box ul {
+    background:url("../images/index/office/the_circle_office.png"/*tpa=http://www.learnfuture.com/Content/duke/images/index/office/the_circle_office.png*/) no-repeat top;
+    overflow:hidden;
+    padding:0 50px;
+    height:380px;
+}
+.corporate_development_office_box ul li {
+list-style:none;
+float:left;
+}
+    .corporate_development_office_box ul li .list_corporate {
+    width:183px;
+
+    }
+      .corporate_development_office_box ul li .list_corporate h2 {
+    padding:0;
+    margin:0;
+    font-size:20px;
+    color:#fff;
+    font-weight:bold;
+    text-align:center;
+    border:none;
+    width:183px;
+    line-height: 217px;
+    }
+         .corporate_development_office_box ul li .list_corporate p{
+    padding:0 10px;
+    margin:0;
+    font-size:15px;
+    color:#fff;
+   
+    width:183px;
+    
+    }
+         /**助力企业发展*/
+.customized_training {
+width:100%;
+height:512px;
+background:url("../images/index/office/customized_training_bj.jpg"/*tpa=http://www.learnfuture.com/Content/duke/images/index/office/customized_training_bj.jpg*/) no-repeat center;
+
+}
+    .customized_training .customized_training_box {
+    width:1200px;
+    margin:0 auto;
+    }
+.customized_training_title {
+width:100%;
+margin:0 auto 15px;
+border-bottom:1px solid #b93522;
+
+}
+.customized_training_title h2{
+  padding: 25px 0 10px;
+text-align: center;
+font-size: 32px;
+color: #28282a;
+border-bottom: 3px solid #b93522;
+width: 420px;
+margin: 0 auto;
+
+}
+/**视频搜索*/
+.start_search {
+width:100%;
+height:721px;
+background:url("../images/index/start_search/start_search_bj.jpg"/*tpa=http://www.learnfuture.com/Content/duke/images/index/start_search/start_search_bj.jpg*/) no-repeat center;
+}
+.start_search_box {
+width:1200px;
+margin:0 auto;
+padding-top:20px;
+}
+.start_search_left {
+width:815px;
+float:left;
+}
+.start_search_left h2{
+width:670px;
+background:#c1181e;
+height:45px;
+line-height:45px;
+font-size:23px;
+color:#fff;
+text-align:center;padding: 0px;
+margin: 0 0 10px 0;
+}
+.query_condition_815  {
+width:670px;
+margin-bottom: 10px;
+}
+    .query_condition_815 .course_input {
+        width:219px; height:42px;
+        border:1px solid #b93522;
+        background:#fff;
+        font-size:15px;
+        padding: 8px 8px;
+color: #333;margin-right:15px;
+    }
+    .query_condition_815 .address_select {
+           width:165px; height:42px;
+        border:1px solid #b93522;
+        background:#fff;
+        font-size:15px;
+        padding: 8px 8px;
+color: #333;margin-right:15px;
+    }
+    .query_condition_815 .query_button_1 {
+    width:112px;height:42px;
+    background:#c1181e;padding:8px; color:#fff;font-size:15px;border:none;margin-right:12px;
+    }
+      .query_condition_815 .query_button_2 {
+    width:121px;height:42px;
+    background:#c1181e;padding:3px; color:#fff;font-size:15px;border:none;text-decoration: underline;
+    }
+    .query_condition_815 .query_button_2 img{
+    margin: 2px 4px;
+    }
+
+      .query_condition_815 .query_link_2 {
+    width:130px;height:42px;
+    background:#b93522;padding:11px; color:#fff;font-size:15px;border:none;
+    }
+
+      .query_page_815 {
+width:670px;
+ clear: both;
+    margin: 25px 0 auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+
+    .query_page_815 a,.query_page_815 span {
+     border: 1px solid #666;
+    color: #4d555d; 
+    line-height: 32px;
+    margin: 0 5px;
+    padding: 5px 10px;
+    transition: border-color 0.2s ease 0s;
+    border-radius:4px;
+}
+
+
+.query_page_815 .active {
+            background-color: grey;
+    color: #fff;
+}
+
+.query_page_815 .disabled {
+      background-color: lightgray;
+    color: #fff;
+    cursor:default;
+
+}
+.query_page_815 .disabled:hover {
+      text-decoration:none;
+}
+
+
+
+.start_search_right {
+float:right;
+width:385px;
+}
+.curriculums_table {
+border:none;width:670px;
+font-size:16px;
+color:#000;
+text-align:center;
+}
+    .curriculums_table thead tr, .curriculums_table tbody tr {
+    height: 32px;
+line-height: 32px;
+font-weight:400 !important;
+    }
+.curriculums_table thead tr th{
+font-size:16px; font-weight:bold;
+color:#000;
+
+}
+.curriculums_table thead tr th .name_course{
+font-size:16px; font-weight:bold;
+color:#000;
+float:left;
+width:350px;
+}
+.curriculums_table thead tr th .starting_course{
+font-size:16px; 
+font-weight:bold;
+color:#000;
+text-align:center;
+width:195px;
+}
+.curriculums_table tbody tr td .starting_course_list{
+color:#000;
+width:195px;
+overflow:hidden;
+text-overflow:ellipsis;
+white-space:nowrap;
+}
+.curriculums_table thead tr th .supporting_learning_video_title{
+font-size:16px; font-weight:bold;
+color:#000;
+text-align:center;
+width:130px;
+}
+.curriculums_table tbody tr td .name_course_list {
+    width:335px;
+    display:block;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    font-size:14px;
+    color:#000;
+    text-align: left;
+    font-weight:400 ;
+}
+.curriculums_table tbody tr td a{
+    color:black;
+}
+.curriculums_table .content12{
+      font-weight:400;
+}
+.curriculums_table tbody tr td .proved_entrance{
+    text-decoration:underline;
+    cursor:pointer;
+    color:#000;
+}
+.curriculums_table tbody tr td .proved_entrance:hover{
+    text-decoration:underline;
+    cursor:pointer;
+    color:#c1181e;
+}
+
+.similar_courses_promote {
+    width:385px;
+
+}
+.similar_courses_promote ul {
+   height:190px;
+   margin-bottom:10px;
+   padding:0;
+   overflow:hidden;
+}
+.similar_courses_promote_title {
+border-bottom:1px solid #c1181e;
+height:30px;
+text-align:center;
+}
+.similar_courses_promote_title h2{
+border-bottom:3px solid #c1181e;
+
+font-size:23px;
+display: initial;
+font-weight: 400;padding: 0px 0;
+text-align:center;
+}
+.similar_courses_promote_title h2 a{
+padding:0 5px;
+font-size:15px;
+display: initial;
+font-weight: inherit;
+
+}
+.similar_courses_promote ul li {
+list-style:none;
+font-size:14px;color:#000;padding:4px 0;overflow: hidden;
+}
+.similar_courses_promote ul li .course_list{
+display:block;
+width:385px;
+white-space:nowrap;
+overflow:hidden;
+text-overflow:ellipsis;
+font-size:15px;color:#000;
+font-weight:400;
+}
+.similar_courses_promote ul li .course_list:hover{
+display:block;
+width:385px;
+white-space:nowrap;
+overflow:hidden;
+text-overflow:ellipsis;
+font-size:15px;color:#ff0000;
+font-weight:400;
+}
+.similar_courses_promote ul li .hot_videos_list{
+display:block;
+width:300px;
+white-space:nowrap;
+overflow:hidden;
+text-overflow:ellipsis;
+font-size:14px;color:#000;
+float:left;
+font-weight:400;
+}
+.similar_courses_promote ul li .hot_videos_list:hover{
+display:block;
+width:300px;
+white-space:nowrap;
+overflow:hidden;
+text-overflow:ellipsis;
+font-size:14px;color:#ff0000;
+float:left;
+font-weight:400;
+}
+.similar_courses_promote ul li .audition_hot{
+width:65px;float:right;
+font-size:14px;color:#000;
+font-weight:400;
+}
+.similar_courses_promote ul li .audition_time {
+    width:80px;float:right;
+font-size:14px;color:#000;text-align:right;
+font-weight:400;
+}
+/**office线上订阅*/
+.office_take_introduce {
+width:100%;
+height:420px;
+background:url("../images/index/office/office_bj_002.jpg"/*tpa=http://www.learnfuture.com/Content/duke/images/index/office/office_bj_002.jpg*/) no-repeat center;
+overflow:hidden;
+}
+    .office_take_introduce .office_take_introduce_box {
+    width:1200px;
+    margin:0 auto;
+    padding-top: 30px;
+    }
+.introduce_001 {
+width:600px;
+margin:0 auto;
+height:150px;
+}
+    .introduce_001 img {
+    float:left;
+    width:88px;
+    height:130px;
+    }
+     .introduce_001 p {
+    float:left;
+    font-size:20px;
+    color:#000;
+    width:475px;
+    padding-top:35px;
+    text-align:center
+    }
+.introduce_002 {
+    width:1070px;
+    height:102px;
+    margin:0 auto ;
+    background:#2c579b; padding: 25px;
+}
+    .introduce_002 p {
+        font-size:23px;
+        color:#fff;
+        text-align:center;
+       
+    }
+    .office_take_introduce_box .introduce_002_title {
+    font-size:20px;
+    color:#000; 
+    width:1070px;
+    margin:0 auto;
+    line-height: 30px;
+    }
+.office_take_introduce_box ul {
+     width:1070px;
+    margin:0 auto;
+}
+    .office_take_introduce_box ul li {
+        padding-left:10px;
+        background:url("../images/index/office/dark_spot.png"/*tpa=http://www.learnfuture.com/Content/duke/images/index/office/dark_spot.png*/) no-repeat left;
+    list-style:none;
+    line-height: 30px;
+    }
+      .office_take_introduce_box ul li a{
+       font-size:20px;
+       color:#000;
+    }
+.subscribe_details {
+width:100%;
+height:477px;
+background:#fff;
+}
+    .subscribe_details .subscribe_details_box {
+    width:1200px;
+    margin:0 auto;padding-top: 25px;
+    }
+.subscribe_details_box .subscribe_details_title{
+    margin:0 auto;
+    
+    width:220px;
+    height:60px;
+   
+    border: 1px dashed #2c579b;
+   
+} 
+.subscribe_details_box .subscribe_details_title a{
+    display:block;
+    width:210px;
+    height:50px;
+    background:#2c579b;
+   padding: 11px 20px;
+font-size: 25px;
+color: #fff;
+margin: 4px;
+text-align: center;
+}
+.subscribe_details_box ul {
+    background:url("../images/index/office/offer_003.png"/*tpa=http://www.learnfuture.com/Content/duke/images/index/office/offer_003.png*/)no-repeat center;
+overflow:hidden;
+margin-top:25px;
+height:250px;
+}
+    .subscribe_details_box ul li {
+    float:left;
+    list-style:none;
+    width:238px;
+   padding: 15px;
+margin-right: 2px;
+height: 150px;
+overflow: hidden;
+    }
+      .subscribe_details_box ul li a{
+    font-size:18px;
+    color:#000;
+    }
+.offer_004 {
+width:180px;
+height:40px;
+margin:0 auto;
+
+
+}
+.offer_004 a {
+
+color:#2c579b;
+font-size:20px;
+
+}
+    .offer_004 img {
+    width:45px;
+    height:33px;
+    }
+.offer_005 p {
+text-align:center;
+font-size:18px;
+}
+.subscribe_buy {
+width:100%;
+background:url("../images/index/office/subscribe_buy.jpg"/*tpa=http://www.learnfuture.com/Content/duke/images/index/office/subscribe_buy.jpg*/)repeat center;
+min-height:370px;
+}
+    .subscribe_buy .subscribe_buy_box {
+    width:1200px;
+    margin:0 auto;
+
+    }
+.subscribe_buy_box ul {
+padding:0;
+margin:0;
+}
+.subscribe_buy_box ul li {
+list-style:none;
+float:left;
+padding:0px 10px;
+}
+.no_f_r {
+    margin-right:0px !important;
+}
+.subscribe_buy_001 {
+    margin: 35px auto;
+    padding:20px 34px;
+   background: rgba(255,255,255,0.5);
+filter: alpha(opactiy=0.5);
+-moz-opacity: 0.5;
+-khtml-opacity: 0.5;
+   width:375px;
+   height:300px;
+   border-radius: 10px;
+}
+    .subscribe_buy_001 p {
+    margin:0 auto;
+    padding:10px 0;
+    }
+        .subscribe_buy_001 p button {
+            background:#fff;
+   height:50px;
+   width:200px;
+   color:#000;
+   font-size:25px;
+  border-radius: 4px;
+border: none;
+margin: 0 auto;
+display: block;
+        }
+      .subscribe_buy_001 p .subscribe_button1{
+   background:#1484d5;
+   height:50px;
+   width:200px;
+   color:#fff;
+   font-size:25px;
+   font-weight:bold;
+   border-radius: 4px;
+border: none;
+margin:30px auto 0;
+display: block;
+    }
+         .subscribe_buy_001 p .subscribe_button1:hover{
+   background:#0e7fd1;
+   height:50px;
+   width:200px;
+   color:#fff;
+   font-size:25px;
+   font-weight:bold;
+   border-radius: 4px;
+border: none;
+margin:30px auto 0;
+display: block;
+    }
+    .subscribe_buy_001 .subscribe_describe label , .subscribe_buy_001 .subscribe_describe span{
+    font-size:20px;
+    color:#000;
+    font-weight: inherit;
+    }
+   /**免费专区*/
+.free_charge_banner {
+height:350px;
+position:relative;
+margin-top:-60px;
+width:100%;
+}
+.curriculums_list {
+    background:#fff;
+    width:100%;
+    overflow:hidden;
+    padding:10px;
+}
+    .curriculums_list .curriculums_list_box {
+        width:1200px;
+        margin:0 auto;
+
+    }
+.curriculums_list_title {
+    height:50px;
+    width:1200px;
+    background:#f0f0f0;
+    margin-bottom: 10px;
+}
+.curriculums_list_title h2{
+   text-align:center;
+   color:#333;
+   font-size:33px;
+   padding: 6px 0;
+   margin:0;
+}
+/**选项卡*/
+.tab_list {
+    height:33px;
+    width:100%;
+}
+.tab_list .tabs {  
+    margin: 0;  
+    padding: 0;  
+    float: left;  
+    list-style: none;  
+    height: 32px;  
+    border-bottom: 1px solid #999;  
+ 
+    width: 100%;  
+}  
+.tab_list .tabs li {  
+    float: left;  
+    margin: 0;  
+    padding: 0;  
+    height: 31px;  
+    line-height: 31px;  
+  
+    margin-bottom: -1px;  
+   
+    overflow: hidden;  
+    position: relative;  
+}  
+.tab_list .tabs li a {  
+    text-decoration: none;  
+    color: #000;  
+    display: block;  
+    font-size:20px;  
+    padding: 0 20px;  
+    
+    outline: none;  
+} 
+.tab_list .tabs .hover_a a{  
+    text-decoration: none;  
+    color: #fff;  
+    display: block;  
+    font-size:20px;  
+  
+
+}  
+      
+.tab_list .tabs .hover_a, .tab_list .tabs .hover_a a:hover  {  
+    background: #1e2132;  
+    color: #fff;  
+    font-size:20px;
+
+}  
+.tab_container {  
+   
+    border-top: none;  
+    clear: both;  
+    float: left;   
+    width: 100%;  
+    background: #fff;  
+    -moz-border-radius-bottomright: 5px;  
+    -khtml-border-radius-bottomright: 5px;  
+    -webkit-border-bottom-right-radius: 5px;  
+    -moz-border-radius-bottomleft: 5px;  
+    -khtml-border-radius-bottomleft: 5px;  
+    -webkit-border-bottom-left-radius: 5px;  
+}
+.kc_nfotypelist {
+position:relative;
+}
+.kc_nfotypelist .kc_sort{
+background: rgba(0, 0, 0, 0) url("../images/index/transparent_triangle.png"/*tpa=http://www.learnfuture.com/Content/duke/images/index/transparent_triangle.png*/) no-repeat scroll left center;
+color: #fff;
+height: 115px;
+left: 0px;
+margin-left: 0px;
+position: absolute;
+top: 0px;
+width: 125px;
+}
+.kc_nfotypelist .kc_sort a {
+    color: #fff;
+    display: inline-block;
+    font-size: 15px;
+    margin-left:5px;
+    padding: 10px;
+}
+ .kc_nfotypelist .kc_category_effect{
+    width: 280px;
+    display: block;
+    height: 200px;
+}
+ .kc_nfotypelist .kc_category_effect img{
+    width: 280px;
+  
+    height: 200px;
+}
+  .kc_nfotypelist .kc_trial_watching{
+  position: absolute;
+right: 14px;
+bottom: 20px;
+}
+.kc_tab_gather {
+margin-top:20px;
+
+}
+    .kc_tab_gather ul {
+    margin:0;
+    padding:0;
+    }
+    .kc_tab_gather ul li {
+    float:left;
+    list-style:none;
+    /*margin: 0 10px;*/
+    padding:8px;
+         border:1px solid transparent;
+    }
+
+        .kc_tab_gather ul li:hover {
+
+            border-color:#ddd;
+
+        }
+
+.kc_tab_name {
+height:34px;
+white-space: nowrap;
+        word-break: keep-all;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width:280px;
+}
+.kc_tab_name a{
+color:#333;
+font-size:15px;
+
+
+
+}
+.kc_tab_name a:hover{
+color:#f00;
+font-size:15px;
+}
+.kc_tab_cost {
+    height:35px;
+}
+    .kc_tab_cost a:hover {
+    text-decoration:none;
+    }
+    .kc_tab_cost .cost_now {
+    font-size:18px;
+    color:#ff500c;
+   padding-right:5px;
+    }
+    .kc_tab_cost .cost_history {
+    font-size:12px;
+    color:#666;   
+    text-decoration:line-through
+    }
+    /**在线学习*/
+.online_learning_banner {
+    width:100%;
+    height:350px;
+    background:#e1e1e1;
+    margin-top:-60px;
+}
+    .online_learning_banner .online_learning_banner_conter {
+        width:1200px;
+        height:350px;
+        margin: 0 auto;
+        position: relative;
+        background-color:#f7f7f7 ;
+    }
+        .online_learning_banner .online_learning_banner_conter .left_area {
+        width:200px;
+        height:350px;
+        position:absolute;
+        left:0;
+        top:0;
+        background:#f7f7f7;
+        }
+.constyle_string_t {
+    background:#e4e4e4;
+    color:#414141;
+    font-size:17px;height:50px;margin-top: 60px;
+line-height: 50px;
+padding-left: 10px;
+}
+.online_learning_banner .online_learning_banner_conter .left_area  ul li{
+    list-style: none;
+padding: 7px 15px;
+border-bottom: 1px solid #ddd;
+    
+}
+.online_learning_banner .online_learning_banner_conter .left_area  ul li a{
+   padding-left: 15px;
+   font-size:16px;
+   color:#414141;
+    
+}
+.online_learning_banner .online_learning_banner_conter .left_area  ul li a:hover{
+   text-decoration:none;
+   font-size:16px;
+   color:#f00;
+    padding-left: 15px;
+}
+        .online_learning_banner .online_learning_banner_conter .right_area {
+        width:990px;
+        height:350px;
+        position:absolute;
+        right:0;
+        top:0;
+        
+        }
+            .online_learning_banner .online_learning_banner_conter .right_area .online_learning_001 {
+            width:990px;
+            height:250px;
+            }
+             .online_learning_banner .online_learning_banner_conter .right_area .online_learning_002 {
+            width:100%;
+            height:90px;
+            position:relative;
+            margin-top:10px;
+            }
+              .online_learning_banner .online_learning_banner_conter .right_area .online_learning_002 a{
+            width:313px;
+            height:45px;
+            position:absolute;
+            top: 25px;
+right: 206px;
+            }
+.office_online_subscription {
+height:140px;
+width:100%;
+background:url("../images/index/lecturer_team/online_subscription_bj.jpg"/*tpa=http://www.learnfuture.com/Content/duke/images/index/lecturer_team/online_subscription_bj.jpg*/) no-repeat center;
+margin-top:10px;
+}
+.hotcourses_hotlist_01 {
+margin:0 auto;
+width:1200px;
+}
+    .hotcourses_hotlist_01 h2,.recent_updates h2{
+    width:100%;
+    font-size:33px;
+    color:#333;
+    margin:0;
+    padding:30px 0 20px;
+    text-align:center;
+    }
+.videoReCommend-slider ul li {
+list-style:none;
+}
+.recent_updates {
+width:1200px;
+margin:0 auto;
+overflow: hidden;
+}
+.recent_updates ul{
+margin: 0;
+padding: 0;
+overflow: hidden;
+}
+    .recent_updates ul li {
+    float:left;
+    list-style:none;
+    margin:0 10px;
+    }
+.course_preview{
+    width:280px;
+    height:200px;
+    position:relative ;
+
+}
+.course_preview .course_preview_sort{
+    background: rgba(0, 0, 0, 0) url("../images/index/transparent_triangle.png"/*tpa=http://www.learnfuture.com/Content/duke/images/index/transparent_triangle.png*/) no-repeat scroll left center;
+color: #fff;
+height: 115px;
+left: 0px;
+margin-left: 0px;
+position: absolute;
+top: 0px;
+width: 125px;
+}
+.course_preview .course_preview_sort p{
+    color: #fff;
+display: inline-block;
+font-size: 15px;
+margin-left: 5px;
+padding: 10px;
+}
+.course_preview .course_preview_sort a{
+    color: #fff;
+display: inline-block;
+font-size: 15px;
+margin-left: 5px;
+padding: 10px;
+}
+    .course_preview .course_preview_image {
+        width: 280px;
+display: block;
+height: 200px;
+    }
+      .course_preview .course_preview_image img{
+        width: 280px;
+
+height: 200px;
+    }
+    .course_preview .course_preview_btn {
+        position: absolute;
+right: 15px;
+bottom: 12px;
+    }
+.situational_teaching {
+background:url("../images/index/lecturer_team/situational_teaching_bj.jpg"/*tpa=http://www.learnfuture.com/Content/duke/images/index/lecturer_team/situational_teaching_bj.jpg*/) no-repeat center;
+height:320px;
+width:100%;
+}
+.situational_teaching_box {
+width:1200px;
+margin:0 auto;
+}
+.l_reminder {
+float:left;
+}
+.r_trial_watching {
+float:left;width:600px;
+}
+.smooc_firm {
+width:100%;
+height:305px;
+background:white;
+}
+    .smooc_firm .smooc_firm_box {
+    width:1200px;
+    margin:0 auto;
+    }
+.smooc_firm .smooc_firm_box .this_photographer_l {
+width:400px;
+height:305px;
+float:left;
+}
+.describe_r_smooc_firm {
+float:right;
+width:800px;
+margin: 50px auto 0;
+}
+    .describe_r_smooc_firm .smooc_firm_title {
+    width:720px;height:70px;
+    background:#c1191f;
+    font-size:32px;
+    color:#fff;
+    text-align:center;line-height: 70px;
+    }
+    .describe_r_smooc_firm ul {
+    overflow:hidden;margin: 25px auto 15px;
+    }
+.describe_r_smooc_firm ul li{
+   list-style:none;float:left;padding:10px 15px;
+   color:#fff;
+   font-size:25px;
+   font-weight:bold;
+}
+.describe_r_smooc_firm .contact_way_smooc_firm {
+    text-align:center;
+    font-size:30px;
+    color:#fff;
+}
+/*原创技术文章*/
+.original_technical_articles {
+width:100%;
+height:358px;
+background:#f6f6f6 url("../images/index/lecturer_team/original_technical_articles_bj.png"/*tpa=http://www.learnfuture.com/Content/duke/images/index/lecturer_team/original_technical_articles_bj.png*/)no-repeat center;
+
+}
+    .original_technical_articles .original_technical_articles_box {
+    margin:0 auto;
+    width:1200px;
+
+    }
+.original_technical_articles_box h2 {
+    font-size:32px;
+    color:#333333;
+    text-align:center;
+    padding:30px 0 20px;
+    margin:0 auto; 
+}
+.original_technical_articles_box .float_four {float:left;width:272px;
+                                              margin: 0 14px;
+}
+.original_technical_articles_t{
+    width: 272px;
+height: 38px;
+background: #686868;
+color: #fff;
+position: relative;
+}
+.original_technical_articles_t span{
+text-align: center;
+font-size: 19px;
+font-weight: bold;
+color: #fff;
+display: block;
+padding: 7px 0;
+
+margin: 0 auto;
+}
+    .original_technical_articles_t a {
+        position: absolute;
+text-decoration: underline;
+color: #fff;
+font-size: 15px;
+right: 11px;
+top: 6px;
+    }
+    .float_four ul {
+        height: 210px;
+overflow: hidden;
+    }
+        .float_four ul li {
+            list-style: none;
+clear: both;
+width: 272px;
+height: 26px;
+line-height: 26px;
+margin: 0;
+padding: 0;
+        }
+         .float_four ul li a {
+    display: block;
+    float: left;
+    width: 272px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    color: #000;
+        padding-left: 10px;
+padding-left:10px;
+}
+
+         /*产品标题*/
+.product_title {
+padding-bottom: 10px;
+    padding-top: 20px;
+    width: 100%;
+}
+.product_title_box {
+    margin:0px auto;
+    
+width:1200px;
+
+}
+
+
+.product-link-box {
+
+ display: table;
+    padding: 0 215px 20px;
+    width: 100%;
+}
+
+.product-link-box .link {
+    border: 2px solid #c3181f;
+    border-radius: 5px;
+    display: table;
+    float: left;
+    padding: 10px;
+    width: 350px;
+}
+.product-link-box a:hover,.product-link-box a:focus{
+
+  text-decoration:none;
+
+}
+
+
+.product-link-box .link span{
+    
+     font-size: 18px;
+    line-height: 40px;
+    margin-left: 10px;
+
+}
+
+.product-link-box .link img{
+
+    height: 35px; float: right;
+
+}
+
+
+
+.product_name {
+    border-bottom: 1px solid #b93522;
+    height: 56px;
+    padding: 20px;
+    text-align: center;
+}
+.product_name span{
+    border-bottom:4px solid #b93522;
+    font-size:33px;
+    color:#333;
+    margin:0 auto;
+    text-align:center;
+    width:300px;
+    font-weight: initial;
+padding: 0px 0;
+margin-bottom: -2px;
+}
+
+.product_title .title_description {
+text-align:center;
+font-size:15px;
+color:#333;padding:20px 0;
+}
+
+.tm_product_title {
+padding-bottom: 10px;
+    
+    width: 100%;
+}
+.tm_product_title_box {
+    margin:0px auto;
+    
+width:1200px;
+
+}
+
+.tm_product_name {
+   
+    height: 56px;
+    padding: 20px;
+    text-align: center;
+}
+
+.tm_product_name span{
+    
+    font-size:33px;
+    color:#333;
+    margin:0 auto;
+    text-align:center;
+    width:300px;
+    font-weight: initial;
+padding: 0px 0;
+margin-bottom: -2px;
+}
+
+
+.tm_product_titlelist{
+    /*margin-top: 10px;*/
+    /*padding-bottom: 5px;
+    padding-top: 5px;*/
+    width: 100%;
+    background-color:#b93522;
+}
+
+.tm_product_titlelist_box {
+    margin:0px auto;
+    
+width:1200px;
+
+}
+
+.tm_product_titlelist_box ul{
+  display: table;
+    margin: 0 auto;
+
+}
+
+.tm_product_titlelist_box ul>li{
+     float:left;
+     list-style:none;
+     width:150px;
+}
+
+.tm_product_titlelist_box ul>li a{
+ font-size:22px;
+ padding:8px 25px;
+ display:table;
+ color:white;
+ border:1px solid transparent;
+ text-decoration:none;
+}
+
+
+.tm_product_titlelist_box ul>li:hover a{
+background-color:white;
+color:#a00405;
+border:1px solid #e3e3e3;
+ text-decoration:none;
+}
+
+
+.tm_product_titlelist_box .active a{
+background-color:white;
+color:#a00405;
+border:1px solid #a00405;
+ text-decoration:none;
+}
+
+/*学习路径*/
+.product_path {
+    width:100%;
+    background:url("../../images/product_path.jpg"/*tpa=http://www.learnfuture.com/Content/images/product_path.jpg*/) no-repeat bottom;
+    margin-bottom:30px;
+}
+.product_path_box {
+    width:1200px;margin:0 auto;
+    padding-top: 2px;
+}
+
+
+
+.product_path ul {
+     
+    margin-top: -400px;
+    padding: 0 120px;
+    position: absolute;
+    width:1200px;
+}
+
+.product_path ul>li {
+ 
+    float: left;
+    margin: 0 10px;
+    width: 220px;
+    list-style:none;
+}
+
+.product_path .path_description{  
+    background-color: rgba(255,255,255,0.5); /* IE9、标准浏览器、IE6和部分IE7内核的浏览器(如QQ浏览器)会读懂 */
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom:20px;
+}
+
+
+@media \0screen\,screen\9 { /* 只支持IE6、7、8 */
+    .product_path .path_description{
+        background-color: #ffffff;
+        filter: Alpha(opacity=50);
+        position: static; /* IE6、7、8只能设置position:static(默认属性) ，否则会导致子元素继承Alpha值 */
+        *zoom: 1; /* 激活IE6、7的haslayout属性，让它读懂Alpha */
+    }
+}
+
+.product_path ul>li h4 {
+   width:100%;
+   background-color:#b93522;
+   padding:10px;
+   text-align:center;
+   margin:0px;
+   font-weight:normal;
+   color:#fff;
+}
+
+.product_path .title1 {
+   background-color:#de0202;
+}
+.product_path .title2 {
+   background-color:#bf0201;
+}
+
+.product_path .title3 {
+   background-color:#a10202;
+}
+
+.product_path .title4 {
+   background-color:#810202;
+}
+
+
+
+
+.product_path ul>li p {
+   width:100%;
+   padding:10px;
+   margin:0px;
+   background-color:#f8eae9;
+   border:1px dashed red;
+   height:132px;
+}
+
+
+
+/*产品-课程列表*/
+.product_courselist {
+    width:100%;
+    padding:1px 0px;
+    
+}
+.product_courselist_box {
+    width:1200px;margin:0 auto;
+    padding-top: 2px;
+}
+
+
+.product_courselist .course_name{
+    color: #a00405;
+    font-size: 21px;
+    font-weight: normal;
+}
+
+.product_courselist .course_content{
+    float: left;
+    margin: 0;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    padding: 0 20px;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 396px;
+    word-break: keep-all;
+}
+
+
+.product_courselist .course_label{
+   float: left;
+    padding: 0 0px;
+    text-align: left;
+    margin:0;
+}
+
+
+.product_course_table {
+    width: 100%;
+    text-align: center;
+    border: 1px solid #a00405;
+  margin-bottom:30px;
+}
+
+
+  .product_course_table td {
+        text-align: center;
+        font-size: 14px;
+        border: 1px solid #a00405;
+        padding: 10px 15px;
+
+    }
+
+   .product_course_table .col1 {
+     background-color:#f8eae9;
+       width: 500px;
+       text-align:left;
+    }
+
+   .product_course_table .col2 {
+     width: 150px;
+         background-color:#f8eae9;
+    }
+
+   .product_course_table .col3 {
+     text-align:left;
+          background-color:#f8eae9;
+          color:#a00405;
+    }
+
+ /*近期开课*/
+
+.product_offlinecourse_table {
+    width: 100%;
+    text-align: center;
+    border: 1px solid #a00405;
+    margin: 10px auto;
+}
+
+    .product_offlinecourse_table th {
+        text-align: center;
+        font-size: 18px;
+        background-color: #a00405;
+        color: white;
+    }
+
+    .product_offlinecourse_table th, .product_offlinecourse_table td {
+        text-align: center;
+        font-size: 14px;
+        border: 1px solid #a00405;
+        padding: 10px 0px;
+    }
+
+    .product_offlinecourse_table td {
+        background-color: #f8eae9;
+        /*color: #0060be;*/
+    }
+
+
+    .flow_button{
+        background-color:#a00405;
+    }
+ 
+    .productTitle_custom{
+        margin-bottom:20px;
+    }
+
+/*新版TM产品*/
+
+.tm_product_courselist {
+    width:100%;
+    padding:1px 0px;
+    display:table;
+}
+
+
+.tm_product_courselist_box {
+    width:1200px;margin:0 auto;
+    padding-top: 2px;
+}
+
+
+.tm_product_model_table {
+    width: 100%;
+    text-align: center;
+    border: 1px solid #d2d2d2;
+  margin-bottom:10px;
+}
+
+
+.tm_product_model_table th{
+     background-color: #565656;
+    border: 1px solid #565656;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 18px 10px;
+    text-align: center;
+      
+}
+
+.tm_product_model_table td{
+        text-align: center;
+        font-size: 14px;
+        /*border: 1px solid #a00405;*/
+        padding: 10px 10px;
+       vertical-align:top;
+         padding-left:20px;
+         border-bottom:1px solid #d2d2d2;
+}
+.tm_product_model_table .td_content_left{
+        text-align: left;
+      
+}
+
+.tm_product_model_table ul{
+    margin-bottom:0px;
+}
+
+
+.tm_product_course_table {
+    width: 100%;
+    text-align: center;
+    border: 1px solid #d2d2d2;
+  margin-bottom:10px;
+}
+
+
+.tm_product_course_table th{
+ background-color: #565656;
+    border-left: 1px solid #d2d2d2;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 5px;
+    text-align: center;
+}
+
+.tm_product_course_table th:last-child{
+       border-right: 1px solid #565656;
+}
+
+.tm_product_course_table td{
+        text-align: center;
+        font-size: 14px;
+        border: 1px solid #d2d2d2;
+        padding: 10px;
+       
+}
+
+.tm_product_course_table .td_content_left{
+        text-align: left; 
+      word-break:break-all;
+      word-wrap:break-word;
+}
+
+.tm_product_course_table .active_col{
+      
+        background-color:#ffe2e2;
+       
+}
+
+.tm_product_course_table .evenTr{
+      
+        background-color:#eaeaea;
+       
+}
+
+
+
+.tm_product_requirment_table {
+    width: 100%;
+    text-align: center;
+    border: 1px solid #d2d2d2;
+  margin-bottom:10px;
+}
+
+
+.tm_product_requirment_table th{
+ background-color: #565656;
+    border-left: 1px solid #fff;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 18px 5px;
+    text-align: center;
+}
+
+.tm_product_requirment_table th:last-child{
+       border-right: 1px solid #565656;
+}
+
+.tm_product_requirment_table td{
+        text-align: center;
+        font-size: 14px;
+        border: 1px solid #d2d2d2;
+        padding: 10px;
+       
+}
+
+.tm_product_requirment_table .td_content_left{
+       overflow-wrap: break-word;
+    padding-left: 20px;
+    text-align: left;
+    word-break: break-all;
+}
+
+.tm_product_requirment_table .td_title{
+       overflow-wrap: break-word;
+       font-weight:bold;
+    text-align: center;
+    word-break: break-all;
+}
+
+
+.tm_product_requirment_table .active_col{
+      
+        background-color:#ffe2e2;
+       
+}
+
+.tm_product_requirment_table .evenTr{
+      
+        background-color:#eaeaea;
+       
+}
+
+    .tm_product_requirment_table ul {
+        margin-bottom:0px;
+    }
+        .tm_product_requirment_table ul li {
+
+    }
+.capability-requirement{
+    display:table;
+}
+
+.capability-requirement .img-box{
+     display: table;
+    float: left;
+    /*height: 380px;*/
+    width: 385px;
+    text-align:center;
+}
+
+.capability-requirement .table-box{
+      display: table;
+    float: left;
+    width: 815px;
+}
+
+.tm_product_courselist_box .item_desc {
+   display: table; width: 100%
+}
+
+.tm_product_courselist_box .item_desc ul{
+    float:right;
+}
+
+.tm_product_courselist_box .item_desc ul>li{
+    float:left;
+    list-style:none;
+    padding:0 10px;
+}
+.capability-title{
+      display:block;
+    padding: 10px 0px;
+}
+
+.capability-title .title{
+        border-bottom: 5px solid #d2d2d2;
+    padding: 8px 20px;
+    cursor:pointer;
+}
+
+.capability-title .title:hover{
+           border-bottom-color: #b93522;
+    color:#b93522;
+}
+
+
+
+.capability-title .active{
+        border-bottom-color: #b93522;
+    color:#b93522;
+}
+
+.capability-title ul{
+
+    display: table;
+    margin: 0 auto;
+}
+
+.capability-title ul li{
+        display: block;
+    float: left;
+    width: 250px;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 0px;
+    border-bottom: 5px solid #d2d2d2;
+    font-weight: bold;
+    color:#4e4e4e;
+}
+
+.tm_product_job_table {
+    width: 100%;
+    text-align: center;
+    /*border: 1px solid #d2d2d2;*/
+  margin-bottom:10px;
+}
+
+
+.tm_product_job_table th{
+ background-color: #565656;
+    border: 1px solid #565656;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 18px 20px;
+    text-align: center;
+
+   
+}
+
+.tm_product_job_table tr{
+border-bottom: 1px solid silver;
+}
+
+.tm_product_job_table td{
+     font-size: 14px;
+    padding: 10px 10px 10px 20px;
+       
+}
+.tm_product_job_table .job_content_left{
+   text-align:left;
+       
+}
+.tm_product_job_table .job_content_center{
+   text-align:left;
+       
+}
+.tm_job_box {
+    background-color: rgba(238, 242, 245, 0.9); /* IE9、标准浏览器、IE6和部分IE7内核的浏览器(如QQ浏览器)会读懂 */
+}
+
+.tm_product_courselist_box .morejob{
+    display: table;width: 100%;
+}
+.tm_product_courselist_box .morejob a{
+padding:10px;display: table;float: right;
+}
+@media \0screen\,screen\9 { /* 只支持IE6、7、8 */
+    .tm_job_box {
+        background-color: #eef3f6;
+        filter: Alpha(opacity=90);
+        position: static; /* IE6、7、8只能设置position:static(默认属性) ，否则会导致子元素继承Alpha值 */
+        *zoom: 1; /* 激活IE6、7的haslayout属性，让它读懂Alpha */
+    }
+}
+
+/*首页“我们的客户”*/
+.newulfortab{
+    padding-left: 70px;
+        height: 42px;
+            margin-bottom: 0;
+    list-style: none;
+}
+.newulfortab li{
+    float:left;
+    display:block;
+}
+.newulfortab li a{
+        color: #666;
+    border-radius: 0;
+    border: 0 none;
+    line-height: 24px;
+    margin-right: 0;
+    padding: 1px 9px;
+    margin-top: 7px;
+    margin-left: 10px;
+        position: relative;
+    display: block;
+    text-decoration: none;
+}
+.newulfortab li a:focus, .newulfortab li a:visited,.newulfortab li a:active {
+    text-decoration: none;
+}
+.newulfortab .active a{
+    color:#b93522;
+    border-bottom:1px solid #b93522;
+}
+
+
+.office_cats{
+    box-shadow: 0px 5px 5px #e0e0e0;
+}
+.office_cats .office_cats_small{
+    height: 69px; width: 1100px; line-height: 69px; margin: 0 auto; position: relative; 
+}
+.office_cats .office_cats_small .onecat{
+    float: left; width: 107px; text-align: center; color: black; font-size: 14px; line-height: 19px;height:69px;cursor:pointer;    padding-top: 8px;
+}
+.office_cats .office_cats_small .active{
+    background:#7496b3;color:white;
+}
+.office_cats .office_cats_small .active:after {
+    content:'';
+    width: 0;
+    height: 0;
+    border-top:6px solid #7496b3;
+  border-left:6px solid transparent;
+  border-right:6px solid transparent;
+    position: absolute;
+    top: 100%;
+        left: 45%;
+}
+
+
+.office_cat_course{
+    height:215px;width:1100px;margin:0 auto;box-shadow: 0px 5px 15px #e0e0e0;overflow:hidden;display:none;background:url("../../images/officetool/catbackground.png"/*tpa=http://www.learnfuture.com/content/images/officetool/catbackground.png*/) center no-repeat;    padding-left: 100px;
+    padding-top: 16px;
+    position:absolute;
+        left: 0;
+    top: 69px;
+        z-index: 100;
+    text-align: left;
+    cursor:default;
+}
+.office_cat_course_active{
+    display:block!important;
+}
+.office_cat_course .onecourse{
+    margin-right: 36px;
+    margin-bottom: 7px;
+    display:inline-block;
+    width:278px;
+    height:40px;
+    background:#cadeef;
+    color:black;
+    font-size:14px;
+    vertical-align:top;
+    text-decoration:none;
+    border-radius: 10px;
+        line-height: 40px;
+    text-align: center;
+    overflow:hidden;
+}
+.office_cat_course .onecourse:nth-child(3n+3){
+    margin-right:0;
+}
+.office_artical_one{
+    width:270px;
+    padding-top: 24px;
+}
+.office_artical_one li{
+    font-size:14px;
+    width:270px;
+        margin-bottom: 6px;
+            white-space: nowrap;
+    word-break: keep-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.office_artical_two{
+    width:330px;
+    padding-top: 24px;
+        position: absolute;
+    top: 0;
+    left: 300px;
+}
+.office_artical_two li{
+    font-size:14px;
+    width:330px;
+        margin-bottom: 6px;
+            white-space: nowrap;
+    word-break: keep-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

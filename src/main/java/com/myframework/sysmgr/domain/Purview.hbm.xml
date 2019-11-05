@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping package="com.myframework.sysmgr.domain">
+	<class name="Purview" table="t_system_purview">
+	
+		<!-- 继承字段 -->
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="sort" update="false"/>
+		<property name="enable" update="false"/>
+		<property name="addDate" column="add_date" update="false"/>
+		<property name="updateDate" column="update_date" />
+		<property name="remark" type="text"/>
+		<property name="name"/>
+		<property name="url"/>
+		<property name="isParent" column="is_parent" />
+		<many-to-one name="parent" class="Purview" column="pid" lazy="false"/>
+		<!-- 继承字段 -->
+		
+		<property name="isMenu" column="is_menu"/>
+		<many-to-one name="element" column="element_id" lazy="false"/>
+		
+	</class>
+</hibernate-mapping>

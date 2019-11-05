@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping package="com.myframework.sysmgr.domain">
+	<class name="Element" table="t_system_element">
+		<!-- 公共字段 -->
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="sort" update="false"/>
+		<property name="enable" update="false"/>
+		<property name="addDate" column="add_date" update="false"/>
+		<property name="updateDate" column="update_date" />
+		<property name="remark" type="text"/>
+		<!-- 公共字段 -->
+		
+		<property name="name"/>
+		<property name="method"/>
+		<many-to-one name="style" column="style_id" lazy="false"/>
+		
+	</class>
+</hibernate-mapping>

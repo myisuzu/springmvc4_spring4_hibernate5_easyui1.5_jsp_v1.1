@@ -1,0 +1,523 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.menu-multi {
+	width: 465px;
+}
+
+.menu-multi li {
+	float: left;
+	min-width: 150px;
+}
+
+#select-custom .oneitem {
+	margin-right: 25px;
+	font-size: 14px;
+	cursor: pointer;
+	color: #404040;
+}
+
+#select-custom .selectitem {
+	color: #c2191f !important;
+}
+
+#LRMINIWIN {
+	width: 300px !important;
+	height: 350px !important;
+}
+
+#LR_miniframe {
+	height: 350px !important;
+}
+
+.menu_sort_list_wrap {
+	background: rgba(0, 0, 0, 0)
+		linear-gradient(to bottom, #f9f9f9 0%, #ffffff 100%) repeat scroll 0 0;
+	height: 380px;
+	overflow: hidden;
+	padding: 5px 0 0;
+}
+
+.menu_clearfix {
+	font-size: 12px;
+}
+
+.menu_clearfix a {
+	color: #666;
+	font-size: 12px;
+}
+
+.menu_clearfix a:visited {
+	color: #666;
+}
+
+.menu_clearfix a.getred {
+	color: #E54028 !important;
+}
+
+.menu_clearfix::after {
+	clear: both;
+	content: ".";
+	display: block;
+	font-size: 0;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
+
+.menu_sort_list {
+	float: left;
+	margin-left: -1px;
+	margin-top: 10px;
+	overflow: hidden;
+	padding-left: 18px;
+	width: 370px;
+}
+
+.menu_sort_list_t {
+	float: left;
+	margin-left: -1px;
+	margin-top: 10px;
+	overflow: hidden;
+	padding-left: 18px;
+	width: 370px;
+}
+
+.menu_sort_list_m {
+	float: left;
+	margin-left: -1px;
+	margin-top: 23px;
+	overflow: hidden;
+	padding-left: 18px;
+	width: 297px;
+}
+
+.menu_sort_list dd {
+	border-left: 1px solid #ddd;
+	border-right: 0 none;
+	float: left;
+	line-height: 14px;
+	margin: 8px 5px 8px -1px;
+	padding: 0 0 0 5px;
+	white-space: nowrap;
+}
+
+.menu_sort_list dl {
+	margin: 0;
+	overflow: hidden;
+}
+
+.menu_sort_list dt {
+	font-weight: bold;
+	line-height: 18px;
+	padding: 6px 0 2px 6px;
+}
+
+.menu_sort_list_t dd {
+	border-right: 0 none;
+	float: left;
+	line-height: 14px;
+	margin: 8px 6px 8px -1px;
+	padding: 0 0 0 5px;
+	white-space: nowrap;
+}
+
+.menu_sort_list_t dl {
+	margin: 0;
+	overflow: hidden;
+}
+
+.menu_sort_list_t dt {
+	font-weight: bold;
+	line-height: 18px;
+	padding: 6px 0 2px 6px;
+}
+
+.menu_sort_list_m dd {
+	border-right: 0 none;
+	float: left;
+	line-height: 14px;
+	margin: 8px 6px 8px -1px;
+	padding: 0 0 0 5px;
+	white-space: nowrap;
+}
+
+.menu_sort_list_m dl {
+	margin: 0;
+	overflow: hidden;
+}
+
+.menu_sort_list_m dt {
+	font-weight: bold;
+	line-height: 18px;
+	padding: 6px 0 2px 6px;
+}
+
+.dd_SeparationLine {
+	border-left: 1px solid #ddd;
+}
+
+.curry_but, .curry_but:link, .curry_but:visited, .curry_but:hover,
+	.curry_but:active {
+	/*color: white;*/
+	text-decoration: none;
+}
+
+#cbp-hrmenu {
+	height: 40px;
+	background-color: #fff;
+	color: #333 !important;
+	/*border-bottom: 1px solid #e2e2e2;*/
+}
+
+#cbp-hrmenu .horiz_menu {
+	
+}
+
+#cbp-hrmenu .horiz_menu .at_present {
+	padding: 1px 10px;
+	line-height: 26px;
+	margin-top: 0px;
+	border-radius: 3px;
+	color: #333;
+}
+
+#cbp-hrmenu .horiz_menu .cbp-hropen .at_present {
+	color: #fff;
+}
+
+#cbp-hrmenu .horiz_menu .cbp-hropen .at_present a {
+	color: #fff;
+}
+
+.cbp-hrmenu .cbp-hrsub {
+	background-color: transparent;
+	box-shadow: none;
+	position: absolute;
+	width: 1180px;
+	margin-left: -133px;
+	z-index: 39;
+	margin-top: 7px;
+}
+
+.cbp-hrmenu .cbp-hrsub #curriculum_tab:after {
+	content: '';
+	width: 0;
+	height: 0;
+	border: solid transparent;
+	border-width: 6px;
+	border-bottom-color: #c3181f;
+	position: absolute;
+	bottom: 100%;
+	left: 15%;
+}
+
+#curriculum_tab>ul>li span {
+	background: rgba(0, 0, 0, 0)
+		url("${pageContext.request.contextPath}/resource/js/fore/Content/Images/layout/allCourse-unselect.png"
+		/*tpa=http://www.learnfuture.com/Content/Images/layout/allCourse-unselect.png*/
+		
+			
+		/*tpa=http://www.learnfuture.com/Content/Images/layout/allCourse-unselect.png*/
+		
+			) no-repeat scroll 0 0;
+	height: 300px;
+	line-height: 30px;
+	margin-top: 15px;
+	padding-top: 45px;
+	width: 40px;
+}
+
+#curriculum_tab>ul>li {
+	background: #666 none repeat scroll 0 0;
+	border-radius: 8px;
+	color: #fff;
+	margin: 2px 0;
+	width: 40px;
+}
+
+#curriculum_tab>ul {
+	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+	border-right: 1px solid #c3181f;
+	height: 569px;
+	padding-bottom: 0;
+	padding-top: 0;
+	width: 40px;
+}
+
+#curriculum_tab .lsattr {
+	background-color: #fff;
+	box-shadow: 5px 5px 7px #9f9f9f;
+	height: 570px;
+	margin-left: 40px;
+	width: 1136px;
+	border-top: 1px solid #c3181f;
+	border-right: 1px solid #c3181f;
+	border-bottom: 1px solid #c3181f;
+}
+
+#curriculum_tab>ul>li.support {
+	background: transparent none repeat scroll 0 0;
+	color: #fff;
+}
+
+#curriculum_tab>ul>li.selected span {
+	background: rgba(0, 0, 0, 0)
+		url("${pageContext.request.contextPath}/resource/js/fore/Content/Images/layout/allCourse-select.png"
+		/*tpa=http://www.learnfuture.com/Content/Images/layout/allCourse-select.png*/
+		
+			
+		/*tpa=http://www.learnfuture.com/Content/Images/layout/allCourse-select.png*/
+		
+			) no-repeat scroll 0 0 !important;
+}
+
+#curriculum_tab>ul>li.support .smallerbar {
+	background: rgba(0, 0, 0, 0)
+		url("${pageContext.request.contextPath}/resource/js/fore/Content/Images/layout/allPosition-unselect.png"
+		/*tpa=http://www.learnfuture.com/Content/Images/layout/allPosition-unselect.png*/
+		
+			
+		/*tpa=http://www.learnfuture.com/Content/Images/layout/allPosition-unselect.png*/
+		
+			) no-repeat scroll 0 0;
+}
+
+#curriculum_tab>ul>li.selected .smallerbar {
+	background: rgba(0, 0, 0, 0)
+		url("${pageContext.request.contextPath}/resource/js/fore/Content/Images/layout/allPosition-select.png"
+		/*tpa=http://www.learnfuture.com/Content/Images/layout/allPosition-select.png*/
+		
+			
+		/*tpa=http://www.learnfuture.com/Content/Images/layout/allPosition-select.png*/
+		
+			) no-repeat scroll 0 0 !important;
+}
+
+#curriculum_tab>ul>li.support:hover {
+	/*background-color: #e54028;*/
+	color: #fff;
+}
+
+#curriculum_tab>ul>li.selected {
+	border: medium none;
+	color: #fff;
+}
+
+#curriculum_tab>ul>li.selected:hover {
+	background: transparent none repeat scroll 0 0;
+}
+
+#curriculum_tab>ul>li span {
+	font-size: 16px;
+	text-align: center;
+}
+
+#curriculum_positiontab>ul>li span {
+	background: rgba(0, 0, 0, 0)
+		url("${pageContext.request.contextPath}/resource/js/fore/Content/Images/layout/allCourse-unselect.png"
+		/*tpa=http://www.learnfuture.com/Content/Images/layout/allCourse-unselect.png*/
+		
+			
+		/*tpa=http://www.learnfuture.com/Content/Images/layout/allCourse-unselect.png*/
+		
+			) no-repeat scroll 0 0;
+	height: 300px;
+	line-height: 30px;
+	margin-top: 15px;
+	padding-top: 45px;
+	width: 40px;
+}
+
+#curriculum_positiontab>ul>li {
+	background: #666 none repeat scroll 0 0;
+	border-radius: 8px;
+	color: #fff;
+	margin: 2px 0;
+	width: 40px;
+}
+
+#curriculum_positiontab>ul {
+	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+	border-right: 1px solid #c3181f;
+	height: 569px;
+	padding-bottom: 0;
+	padding-top: 0;
+	width: 40px;
+}
+
+.cbp-hrmenu .cbp-hrsub #curriculum_positiontab:after {
+	content: '';
+	width: 0;
+	height: 0;
+	border: solid transparent;
+	border-width: 6px;
+	border-bottom-color: #c3181f;
+	position: absolute;
+	bottom: 100%;
+	left: 26.7%;
+}
+
+#curriculum_positiontab .lsattr {
+	background-color: #fff;
+	box-shadow: 5px 5px 7px #9f9f9f;
+	height: 570px;
+	margin-left: 40px;
+	width: 1136px;
+	border-top: 1px solid #c3181f;
+	border-right: 1px solid #c3181f;
+	border-bottom: 1px solid #c3181f;
+}
+
+#curriculum_positiontab>ul>li.support {
+	background: transparent none repeat scroll 0 0;
+	color: #fff;
+}
+
+#curriculum_positiontab>ul>li.selected span {
+	background: rgba(0, 0, 0, 0)
+		url("${pageContext.request.contextPath}/resource/js/fore/Content/Images/layout/allCourse-select.png"
+		/*tpa=http://www.learnfuture.com/Content/Images/layout/allCourse-select.png*/
+		
+			
+		/*tpa=http://www.learnfuture.com/Content/Images/layout/allCourse-select.png*/
+		
+			) no-repeat scroll 0 0 !important;
+}
+
+#curriculum_positiontab>ul>li.support .smallerbar {
+	background: rgba(0, 0, 0, 0)
+		url("${pageContext.request.contextPath}/resource/js/fore/Content/Images/layout/allPosition-unselect.png"
+		/*tpa=http://www.learnfuture.com/Content/Images/layout/allPosition-unselect.png*/
+		
+			
+		/*tpa=http://www.learnfuture.com/Content/Images/layout/allPosition-unselect.png*/
+		
+			) no-repeat scroll 0 0;
+}
+
+#curriculum_positiontab>ul>li.selected .smallerbar {
+	background: rgba(0, 0, 0, 0)
+		url("${pageContext.request.contextPath}/resource/js/fore/Content/Images/layout/allPosition-select.png"
+		/*tpa=http://www.learnfuture.com/Content/Images/layout/allPosition-select.png*/
+		
+			
+		/*tpa=http://www.learnfuture.com/Content/Images/layout/allPosition-select.png*/
+		
+			) no-repeat scroll 0 0 !important;
+}
+
+#curriculum_positiontab>ul>li.support:hover {
+	/*background-color: #e54028;*/
+	color: #fff;
+}
+
+#curriculum_positiontab>ul>li.selected {
+	border: medium none;
+	color: #fff;
+}
+
+#curriculum_positiontab>ul>li.selected:hover {
+	background: transparent none repeat scroll 0 0;
+}
+
+#curriculum_positiontab>ul>li span {
+	font-size: 16px;
+	text-align: center;
+}
+
+.allCourse-Select {
+	border-color: black red blue orange;
+	border-style: solid;
+	border-width: 21px 40px 21px 0;
+	height: 220px;
+	width: 0;
+}
+
+.cbp-hrmenu .horiz_menu>ul>li>a:hover {
+	background-color: #c3181f !important;
+	color: #fff !important;
+}
+
+.cbp-hrmenu .horiz_menu>ul {
+	margin-left: 0px;
+}
+
+.cbp-hrmenu .horiz_menu>ul>li {
+	margin-left: 0px;
+	margin-right: 35px;
+	padding-top: 5px;
+	padding-bottom: 7px;
+}
+
+#ScrollToTop {
+	position: fixed;
+	_position: absolute;
+	z-index: 4;
+	width: 60px;
+	padding: 20px 10px 30px;
+	display: block;
+	right: 20px;
+	bottom: 100px;
+	width: 60px;
+	height: 70px;
+	background: url("${pageContext.request.contextPath}/resource/js/fore/Content/duke/images/index/stick.png"
+		/*tpa=http://www.learnfuture.com/Content/duke/images/index/stick.png*/
+		
+			
+		/*tpa=http://www.learnfuture.com/Content/duke/images/index/stick.png*/
+		
+			) no-repeat center;
+}
+
+#LRMINIWIN0 span:nth-child(3) {
+	display: none !important;
+}
+
+img.positionStudy {
+	margin-top: 35px;
+	margin-left: 30px;
+}
+
+.oneside {
+	width: 530px;
+	height: 100%;
+}
+
+.oneside .sideli {
+	font-size: 14px;
+	color: black;
+	text-align: center;
+	height: 28px;
+	line-height: 28px;
+	list-style: none;
+	margin-right: 0 !important;
+}
+
+.oneside .sideli .sidelidiv {
+	float: left;
+	width: 100px;
+}
+
+.hd {
+	height: 26px;
+	position: relative;
+	text-align: center;
+}
+
+.hd .prev {
+	position: absolute;
+	top: 165px;
+	left: 259px;
+}
+
+.hd span {
+	cursor: pointer;
+}
+
+.tempWrap {
+	width: 100% !important;
+}

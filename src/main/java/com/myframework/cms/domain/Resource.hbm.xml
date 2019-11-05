@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping package="com.myframework.cms.domain">
+
+	<class name="Resource" table="t_cms_resource">
+		<!-- 公共字段 -->
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<property name="sort" update="false"/>
+		<property name="enable" update="false"/>
+		<property name="addDate" column="add_date" update="false"/>
+		<property name="updateDate" column="update_date" />
+		<property name="remark" type="text"/>
+		<!-- 公共字段 -->
+		
+		<property name="name" />
+		<property name="startDate" column="start_date"/>
+		<property name="duration" />
+		<property name="location" />
+		<property name="imageId" column="image_id"/>
+		<property name="imageUrl" column="image_url"/>
+		<property name="videoUrl" column="video_url"/>
+		<property name="intro" type="text"/>
+		<property name="outline" type="text"/>
+		
+		<!-- 课程资源分类 -->
+		<many-to-one name="type" column="type_id" lazy="false"/>
+		
+	</class>
+	
+</hibernate-mapping>

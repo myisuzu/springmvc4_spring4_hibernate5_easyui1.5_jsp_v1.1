@@ -1,0 +1,205 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.my</groupId>
+	<artifactId>springmvc4_spring4_hibernate5_easyui1.5_jsp_v1.1</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
+	
+	<!-- 集中定义依赖版本号 -->
+	<properties>
+		<spring.version>4.2.1.RELEASE</spring.version>
+		<hibernate.version>5.0.11.Final</hibernate.version>
+		<mysql.version>5.1.32</mysql.version>
+		<c3p0.version>0.9.2</c3p0.version>
+		<servlet-api.version>2.5</servlet-api.version>
+		<jsp-api.version>2.0</jsp-api.version>
+		<jstl.version>1.2</jstl.version>
+		<commons-io.version>2.4</commons-io.version>
+		<commons-lang3.version>3.3.2</commons-lang3.version>
+		<commons-codec.version>1.9</commons-codec.version>
+		<commons-fileupload.version>1.3.1</commons-fileupload.version>
+		<junit.version>4.12</junit.version>
+		<flexjson.version>3.3</flexjson.version>
+		<jackson.version>2.4.3</jackson.version>
+		<json.version>20180813</json.version>
+		<ueditor.version>1.1.2</ueditor.version>
+	</properties>
+
+	<!-- 依赖定义 -->
+	<dependencies>
+		<!-- Spring -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aspects</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<!-- hibernate -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>${hibernate.version}</version>
+		</dependency>
+		<!-- mysql -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${mysql.version}</version>
+		</dependency>
+		<!-- c3p0 -->
+		<dependency>
+			<groupId>com.mchange</groupId>
+			<artifactId>c3p0</artifactId>
+			<version>${c3p0.version}</version>
+		</dependency>
+		<!-- web相关 -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>${servlet-api.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jsp-api</artifactId>
+			<version>${jsp-api.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>jstl</groupId>
+			<artifactId>jstl</artifactId>
+			<version>${jstl.version}</version>
+		</dependency>
+		<!-- Apache工具组件 -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>${commons-lang3.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>${commons-io.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+			<version>${commons-fileupload.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+			<version>${commons-codec.version}</version>
+		</dependency>			
+		<!-- 单元测试 -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- flexjson -->
+		<dependency>
+			<groupId>net.sf.flexjson</groupId>
+			<artifactId>flexjson</artifactId>
+			<version>${flexjson.version}</version>
+		</dependency>
+		<!-- Jackson Json处理工具包 -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+		<!-- 百度Ueditor -->
+		<dependency>
+			<groupId>com.baidu</groupId>
+			<artifactId>ueditor</artifactId>
+			<version>${ueditor.version}</version>
+		</dependency>
+		<!-- json工具类 -->
+		<dependency>
+		    <groupId>org.json</groupId>
+		    <artifactId>json</artifactId>
+		    <version>${json.version}</version>
+		</dependency>
+	</dependencies>
+	
+	<build>
+		<finalName>${project.artifactId}</finalName>
+		<!--将directory目录下的配置文件编译进classes文件  -->
+		<resources>
+			<resource>
+				<directory>src/main/java</directory>
+				<includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+				</includes>
+			</resource>
+			<resource>
+				<directory>src/main/resources</directory>
+				<includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+				</includes>
+			</resource>
+		</resources>
+		
+		<plugins>
+			<!-- 资源文件拷贝插件 -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.7</version>
+				<configuration>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+			<!-- java编译插件 -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.2</version>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+			<!-- 配置Tomcat插件 -->
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<version>2.2</version>
+				<configuration>
+					<port>80</port>
+					<path>/</path>
+					<uriEncoding>UTF-8</uriEncoding>
+					<systemProperties>
+						<JAVA_OPTS>-Xms1024m -Xmx1024m -XX:PermSize=256m -XX:MaxPermSize=256m</JAVA_OPTS>
+					</systemProperties>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	
+</project>

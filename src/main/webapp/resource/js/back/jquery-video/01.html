@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>jquery+video实现点击播弹窗放视频功能</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<script src="js/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+		<button onclick="play()">点击播放</button>
+		<div id="myvideo"></div>
+	</div>
+	<script>
+		function play() {
+			$('#myvideo').html("<video id=\"video\" poster='v1.jpg' style='width: 640px' src='MessisGod.mp4' preload=\"auto\" controls=\"controls\" autoplay=\"autoplay\"></video><img onClick=\"close1()\" class=\"vclose\" src=\"gb.png\" width=\"25\" height=\"25\"/>");
+            //$('.videos').show();
+		}
+		function close1(){
+            var v = document.getElementById('video');//获取视频节点
+            $('#myvideo').hide();//点击关闭按钮关闭暂停视频
+            v.pause();
+            $('#myvideo').html();
+        }
+	</script>
+
+    
+  </body>
+</html>
