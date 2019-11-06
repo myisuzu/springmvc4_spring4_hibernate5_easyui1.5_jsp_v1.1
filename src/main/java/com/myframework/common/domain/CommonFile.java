@@ -12,6 +12,7 @@ public class CommonFile extends Entity {
 	private String name; //文件名称
 	private String size; //文件大小，字节B（1KB=1024字节，1字节=8位）
 	private String type; //文件类型
+	private double score;
 	
 	public String getUrl() {
 		return url;
