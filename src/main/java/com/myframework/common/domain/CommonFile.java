@@ -14,7 +14,7 @@ public class CommonFile extends Entity {
 	private String type; //文件类型
 	private double score;
 	private int age;
-	
+	private int a;
 	public String getUrl() {
 		return url;
 	}
