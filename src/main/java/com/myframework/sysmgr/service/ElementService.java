@@ -16,7 +16,7 @@ public class ElementService extends CommonService<Element> {
 	private ElementDao elementDao;
 	
 	/**
-	 * 查询某权限对应的按钮列表
+	 * 查询某个权限对应的按钮列表
 	 * @param moduleId 权限id
 	 * @return
 	 */
@@ -24,6 +24,25 @@ public class ElementService extends CommonService<Element> {
 		String json = "";
 		try {
 			List<Map<String, Object>> list = elementDao.findListByPurviewId(moduleId);
+			if (list != null && list.size() > 0) {
+				json = FlexJsonUtil.processList(list, "name", "remark");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			throw new RuntimeException(e);
+		}
+		return json;
+	}
+	
+	/**
+	 * 查询当前用户某个权限对应的按钮列表
+	 * @param moduleId 权限id
+	 * @return
+	 */
+	public String getElementButtonJson(int moduleId, int userId) {
+		String json = "";
+		try {
+			List<Map<String, Object>> list = elementDao.findListByPurviewId(moduleId, userId);
 			if (list != null && list.size() > 0) {
 				json = FlexJsonUtil.processList(list, "name", "remark");
 			}

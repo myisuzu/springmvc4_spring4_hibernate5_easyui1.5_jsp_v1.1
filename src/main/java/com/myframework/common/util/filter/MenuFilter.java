@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.springframework.web.context.WebApplicationContext;
 import org.springframework.web.context.support.WebApplicationContextUtils;
+import com.myframework.sysmgr.domain.User;
 import com.myframework.sysmgr.service.ElementService;
 
 /**
@@ -38,10 +39,12 @@ public class MenuFilter extends URLFilter {
 			
 			//获取当前权限id
 			int id = Integer.parseInt(request.getParameter("id"));
+			//获取当前登录用户id
+			int userId = ((User)request.getSession().getAttribute("user")).getId();
 			
 			//获取当前权限的子权限按钮集合的json数据
 			ElementService elementService = ac.getBean(ElementService.class);
-			String toolbar = elementService.getElementButtonJson(id);
+			String toolbar = elementService.getElementButtonJson(id, userId);
 			request.setAttribute("toolbar", toolbar);
 		}
 		

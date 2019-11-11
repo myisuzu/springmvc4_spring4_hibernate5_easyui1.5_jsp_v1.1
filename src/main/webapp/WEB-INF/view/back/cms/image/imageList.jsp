@@ -6,7 +6,9 @@
 	<title>首页滚动图片管理</title>
 	<%@ include file="/WEB-INF/view/back/common/common.jspf" %>
 	<%@ include file="/WEB-INF/view/back/common/jquery-easyui-1.5.jspf" %>
+	<%--
 	<%@ include file="/WEB-INF/view/back/common/jquery-fancybox-2.1.3.jspf" %>
+	 --%>
 	<style type="text/css">
 		a {
 			text-decoration: none;

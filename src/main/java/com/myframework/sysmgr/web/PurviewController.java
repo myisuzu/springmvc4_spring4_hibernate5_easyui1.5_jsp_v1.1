@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import com.myframework.common.pojo.Msg;
 import com.myframework.sysmgr.domain.Purview;
+import com.myframework.sysmgr.domain.User;
 import com.myframework.sysmgr.service.PurviewService;
 
 /**
@@ -128,10 +130,14 @@ public class PurviewController {
 	 */
 	@RequestMapping("/menuJson")
 	@ResponseBody
-	public List<Map<String, Object>> menuJson(@RequestParam(defaultValue="0") int id) 
+	public List<Map<String, Object>> menuJson(
+			HttpSession session,
+			@RequestParam(defaultValue="0") int id) 
 			throws Exception {
-		return purviewService.getZTreeMenuMapList(id);
-	}	
+//		return purviewService.getZTreeMenuMapList(id);
+		int userId = ((User)session.getAttribute("user")).getId();
+		return purviewService.getZTreeMenuMapList(id, userId);
+	}
 	
 	/**
 	 * 请求ztree组件json数据

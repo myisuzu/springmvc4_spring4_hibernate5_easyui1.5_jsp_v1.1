@@ -841,6 +841,48 @@ public class CommonDao<T> {
 	}
 	
 	/**
+	 * 获取指定列的List<Map<String, Object>>集合（一个Map对象代表一条记录）
+	 * @param pid 父记录主键值
+	 * @param userId 当前登录用户id
+	 * @param columnMap 查询列及列别名集合,不指定别名则别名为null或空字符串（Map(<id,"">,<name,text>...)）
+	 * @return
+	 */
+	public List<Map<String, Object>> findMapListByPidAndMap(int pid, int userId, Map<String, Object> columnMap) {
+		List<Map<String, Object>> list = null;
+		try {
+			StringBuffer sb = new StringBuffer("select ");
+			Set<String> keySet = columnMap.keySet();
+			int len = 0;
+			for (String oldColumn : keySet) {
+				Object newsColumn = columnMap.get(oldColumn);
+				if (newsColumn != null && !"".equals(newsColumn.toString())) {
+					sb.append(oldColumn + " " + newsColumn);
+				} else {
+					sb.append(oldColumn);
+				}
+				if (len != (keySet.size()-1)) {
+					sb.append(", ");
+				}
+				len++;
+			}
+			sb.append(" from " + HibernateUtil.getTableNameByClass(sessionFactory, clazz))
+			  .append(" where enable = ?")
+			  .append(" and id in (select purview_id from t_system_role_purview where role_id in (select role_id from t_system_user_role where user_id = "+ userId +"))");
+			if (pid == 0) {
+				sb.append(" and pid is null");
+			} else {
+				sb.append(" and pid = " + pid);
+			}
+			sb.append(" order by sort asc");
+			list = jdbcTemplate.queryForList(sb.toString(), Constant.ENABLE_0);
+		} catch (Exception e) {
+			e.printStackTrace();
+			throw new RuntimeException(e);
+		}
+		return list;
+	}
+	
+	/**
 	 * 查询表id、指定某列的值对象数组
 	 * @param columnName 指定列名
 	 * @return List<[1, 'a'], [2, 'b'] ...>

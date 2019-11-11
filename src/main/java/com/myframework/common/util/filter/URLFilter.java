@@ -66,7 +66,8 @@ public class URLFilter extends AbstractFilter {
 					}
 					return;
 				//只要用户登录，就拥有以下权限	
-				} else if (url.contains("/system/web/main") ||
+				} else if (
+					url.contains("/system/web/main") ||
 					url.contains("/system/web/messageCenterUI") ||
 					url.contains("/system/web/ancemUI") ||
 					url.contains("/system/web/upcomUI") ||
@@ -74,7 +75,10 @@ public class URLFilter extends AbstractFilter {
 					url.contains("/system/web/bugUI") ||
 					url.contains("/system/purview/menuJson") ||
 					url.contains("/system/element/buttonJson") ||
-					url.contains("/system/user/pwdUpdate")) {
+					url.contains("/system/user/pwdUpdate") ||
+					url.startsWith("/common/fancybox") ||
+					url.startsWith("/common/file") ||
+					url.endsWith("/null")) {
 					try {
 						chain.doFilter(request, response);
 					} catch (Exception e) {

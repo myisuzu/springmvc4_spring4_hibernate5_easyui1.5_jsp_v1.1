@@ -76,8 +76,8 @@ public class PurviewService extends CommonService<Purview> {
 	}	
 	
 	/**
-	 * 获取菜单集合
-	 * @param id
+	 * 获取所有菜单集合
+	 * @param pid 菜单权限id
 	 * @return
 	 */
 	public List<Map<String, Object>> getZTreeMenuMapList(int pid) {
@@ -91,6 +91,30 @@ public class PurviewService extends CommonService<Purview> {
 			//columnMap.put("case url when '' then 'true' when null then 'true' else 'false' end isParent", null);
 			columnMap.put("case when url = '' then 'true' when url is null then 'true' else 'false' end isParent", null);
 			list = purviewDao.findMapListByPidAndMap(pid, columnMap);
+		} catch (Exception e) {
+			e.printStackTrace();
+			throw new RuntimeException(e);
+		}
+		return list;
+	}
+	
+	/**
+	 * 获取用户菜单集合
+	 * @param pid 菜单权限id
+	 * @param userId 当前登录用户id
+	 * @return
+	 */
+	public List<Map<String, Object>> getZTreeMenuMapList(int pid, int userId) {
+		List<Map<String, Object>> list = null;
+		try {
+			Map<String, Object> columnMap = new HashMap<>();
+			columnMap.put("id", null);
+			columnMap.put("pid", null);
+			columnMap.put("name", null);
+			columnMap.put("url", "path");
+			//columnMap.put("case url when '' then 'true' when null then 'true' else 'false' end isParent", null);
+			columnMap.put("case when url = '' then 'true' when url is null then 'true' else 'false' end isParent", null);
+			list = purviewDao.findMapListByPidAndMap(pid, userId, columnMap);
 		} catch (Exception e) {
 			e.printStackTrace();
 			throw new RuntimeException(e);

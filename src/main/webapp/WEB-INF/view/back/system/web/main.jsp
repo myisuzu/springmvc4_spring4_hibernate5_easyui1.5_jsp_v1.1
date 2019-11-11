@@ -191,6 +191,7 @@
 		// 开启一个新的tab页面
 		function addTab(id, text, path) {
 			var url = "${pageContext.request.contextPath}/" + path + "?id="+id;
+			
 			if ($("#tabs").tabs('exists', text)) {
 				$("#tabs").tabs('select', text);
 				refreshTab({tabTitle:text,url:url});
