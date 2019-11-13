@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.myframework.common.pojo.EasyUIDataGrid;
 import com.myframework.common.pojo.Msg;
 import com.myframework.common.util.FlexJsonUtil;
+import com.myframework.common.web.CommonDeleteController;
 import com.myframework.sysmgr.domain.Feedback;
 import com.myframework.sysmgr.domain.User;
 import com.myframework.sysmgr.service.FeedbackService;
@@ -22,7 +23,7 @@ import com.myframework.sysmgr.service.FeedbackService;
  */
 @Controller
 @RequestMapping("/system/feedback")
-public class FeedbackController {
+public class FeedbackController extends CommonDeleteController<Feedback> {
 	
 	@Autowired
 	private FeedbackService feedbackService;
@@ -63,16 +64,6 @@ public class FeedbackController {
 		User user = (User) session.getAttribute("user");
 		feedback.setUser(user);
 		return feedbackService.add(feedback);
-	}
-	
-	/**
-	 * 删除
-	 * @param id
-	 */
-	@RequestMapping("/delete")
-	@ResponseBody
-	public Msg delete(Integer[] id) throws Exception {
-		return feedbackService.delete(id);
 	}
 	
 }

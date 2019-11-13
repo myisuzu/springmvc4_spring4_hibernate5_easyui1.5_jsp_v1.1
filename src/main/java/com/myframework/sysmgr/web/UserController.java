@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.myframework.common.pojo.Msg;
 import com.myframework.common.util.ConfigUtil;
 import com.myframework.common.util.FlexJsonUtil;
+import com.myframework.common.web.CommonDisableController;
 import com.myframework.sysmgr.domain.User;
 import com.myframework.sysmgr.service.UserService;
 
@@ -23,7 +24,7 @@ import com.myframework.sysmgr.service.UserService;
  */
 @Controller
 @RequestMapping("/system/user")
-public class UserController {
+public class UserController extends CommonDisableController<User> {
 	
 	@Autowired
 	private UserService userService;
@@ -139,16 +140,6 @@ public class UserController {
 	@ResponseBody
 	public Msg update(User user) throws Exception {
 		return userService.update(user);
-	}
-	
-	/**
-	 * 删除
-	 * @param id
-	 */
-	@RequestMapping("/delete")
-	@ResponseBody
-	public Msg delete(Integer[] id) throws Exception {
-		return userService.disable(id);
 	}
 	
 	/**

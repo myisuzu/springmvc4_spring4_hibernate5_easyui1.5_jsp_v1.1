@@ -6,22 +6,22 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-import com.myframework.cms.domain.Link;
-import com.myframework.cms.service.LinkService;
+import com.myframework.cms.domain.Classes;
+import com.myframework.cms.service.ClassesService;
 import com.myframework.common.web.CommonAddUpdateDeleteMoveController;
 
 /**
- * 友情链接
+ * 班级
  * @author 马元
- * @date 2018年8月26日
+ * @date 2019年11月13日
  * @version 1.0
  */
 @Controller
-@RequestMapping("/cms/link")
-public class LinkController extends CommonAddUpdateDeleteMoveController<Link> {
+@RequestMapping("/cms/classes")
+public class ClassesController extends CommonAddUpdateDeleteMoveController<Classes> {
 
 	@Autowired
-	private LinkService linkService;
+	private ClassesService classesService;
 	
 	/**
 	 * 请求列表页面
@@ -29,7 +29,7 @@ public class LinkController extends CommonAddUpdateDeleteMoveController<Link> {
 	 */
 	@RequestMapping("/listUI")
 	public String listUI() {
-		return "back/cms/link/linkList";
+		return "back/cms/classes/classesList";
 	}
 	
 	/**
@@ -44,7 +44,7 @@ public class LinkController extends CommonAddUpdateDeleteMoveController<Link> {
 			@RequestParam(name="page", defaultValue="1") int pageNo,
 			@RequestParam(name="rows", defaultValue="10") int pageSize) 
 					 throws Exception {
-		return linkService.getEasyUIDataGrid(pageNo, pageSize);
+		return classesService.getEasyUIDataGrid(pageNo, pageSize);
 	}
 	
 	/**
@@ -54,9 +54,9 @@ public class LinkController extends CommonAddUpdateDeleteMoveController<Link> {
 	@RequestMapping("/saveUI")
 	public String saveUI(HttpServletRequest request, @RequestParam(defaultValue="0") int id)
 			 throws Exception {
-		Link link = linkService.findById(id);
-		request.setAttribute("link", link);
-		return "back/cms/link/linkForm";
+		Classes classes = classesService.findById(id);
+		request.setAttribute("classes", classes);
+		return "back/cms/classes/classesForm";
 	}
 	
 }

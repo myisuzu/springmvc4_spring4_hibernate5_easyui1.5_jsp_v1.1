@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import com.myframework.cms.domain.News;
 import com.myframework.cms.service.NewsService;
-import com.myframework.common.pojo.Msg;
+import com.myframework.common.web.CommonAddUpdateDeleteMoveController;
 
 /**
  * 新闻
@@ -18,7 +18,7 @@ import com.myframework.common.pojo.Msg;
  */
 @Controller
 @RequestMapping("/cms/news")
-public class NewsController {
+public class NewsController extends CommonAddUpdateDeleteMoveController<News> {
 
 	@Autowired
 	private NewsService newsService;
@@ -58,49 +58,6 @@ public class NewsController {
 		News news = newsService.findById(id);
 		request.setAttribute("news", news);
 		return "back/cms/news/newsForm";
-	}
-	
-	/**
-	 * 添加
-	 * @param news
-	 */
-	@RequestMapping("/add")
-	@ResponseBody
-	public Msg add(News news) throws Exception {
-		return newsService.add(news);
-	}
-	
-	/**
-	 * 修改
-	 * @param news
-	 */
-	@RequestMapping("/update")
-	@ResponseBody
-	public Msg update(News news) throws Exception {
-		return newsService.update(news);
-	}
-	
-	/**
-	 * 删除
-	 * @param id
-	 */
-	@RequestMapping("/delete")
-	@ResponseBody
-	public Msg delete(Integer[] id) throws Exception {
-		return newsService.delete(id);
-	}
-	
-	/**
-	 * 上移、下移
-	 * @param id1
-	 * @param id2
-	 * @param sort1
-	 * @param sort2
-	 */
-	@RequestMapping("/move")
-	@ResponseBody
-	public Msg move(int id1, int id2, int sort1, int sort2) throws Exception {
-		return newsService.move(id1, id2, sort1, sort2);
 	}
 	
 }

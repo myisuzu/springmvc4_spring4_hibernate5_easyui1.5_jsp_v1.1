@@ -1,16 +1,16 @@
 package com.myframework.cms.dao;
 
 import org.springframework.stereotype.Repository;
-import com.myframework.cms.domain.Link;
+import com.myframework.cms.domain.Classes;
 import com.myframework.common.dao.CommonDao;
 
 /**
- * 友情链接
+ * 班级
  * @author 马元
- * @date 2019年4月23日
+ * @date 2019年11月13日
  * @version 1.0
  */
 @Repository
-public class LinkDao extends CommonDao<Link> {
+public class ClassesDao extends CommonDao<Classes> {
 
 }

@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import com.myframework.cms.domain.Resource;
 import com.myframework.cms.service.ResourceService;
-import com.myframework.common.pojo.Msg;
+import com.myframework.common.web.CommonAddUpdateDeleteMoveController;
 
 /**
  * 资源管理
@@ -18,7 +18,7 @@ import com.myframework.common.pojo.Msg;
  */
 @Controller
 @RequestMapping("/cms/resource")
-public class ResourceController {
+public class ResourceController extends CommonAddUpdateDeleteMoveController<Resource> {
 
 	@Autowired
 	private ResourceService resourceService;
@@ -70,36 +70,6 @@ public class ResourceController {
 		Resource resource = resourceService.findById(id);
 		request.setAttribute("resource", resource);
 		return "back/cms/resource/resourceVideoView";
-	}
-	
-	/**
-	 * 添加
-	 * @param resource
-	 */
-	@RequestMapping("/add")
-	@ResponseBody
-	public Msg add(Resource resource) throws Exception {
-		return resourceService.add(resource);
-	}
-	
-	/**
-	 * 修改
-	 * @param resource
-	 */
-	@RequestMapping("/update")
-	@ResponseBody
-	public Msg update(Resource resource) throws Exception {
-		return resourceService.update(resource);
-	}
-	
-	/**
-	 * 删除
-	 * @param id
-	 */
-	@RequestMapping("/delete")
-	@ResponseBody
-	public Msg delete(Integer[] id) throws Exception {
-		return resourceService.delete(id);
 	}
 	
 }

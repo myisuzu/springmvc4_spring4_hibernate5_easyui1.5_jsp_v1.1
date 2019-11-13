@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import com.myframework.common.pojo.Msg;
+import com.myframework.common.web.CommonAddUpdateDeleteMoveController;
 import com.myframework.sysmgr.domain.Role;
 import com.myframework.sysmgr.service.RoleService;
 
@@ -17,7 +18,7 @@ import com.myframework.sysmgr.service.RoleService;
  */
 @Controller
 @RequestMapping("/system/role")
-public class RoleController {
+public class RoleController extends CommonAddUpdateDeleteMoveController<Role> {
 	
 	@Autowired
 	private RoleService roleService;
@@ -54,49 +55,6 @@ public class RoleController {
 	@RequestMapping("/saveUI")
 	public String saveUI() {
 		return "back/system/role/roleForm";
-	}
-	
-	/**
-	 * 添加
-	 * @param role
-	 */
-	@RequestMapping("/add")
-	@ResponseBody
-	public Msg add(Role role) throws Exception {
-		return roleService.add(role);
-	}
-	
-	/**
-	 * 修改
-	 * @param role
-	 */
-	@RequestMapping("/update")
-	@ResponseBody
-	public Msg update(Role role) throws Exception {
-		return roleService.update(role);
-	}
-	
-	/**
-	 * 删除
-	 * @param id
-	 */
-	@RequestMapping("/delete")
-	@ResponseBody
-	public Msg delete(Integer[] id) throws Exception {
-		return roleService.disable(id);
-	}
-	
-	/**
-	 * 上移、下移
-	 * @param id1
-	 * @param id2
-	 * @param sort1
-	 * @param sort2
-	 */
-	@RequestMapping("/move")
-	@ResponseBody
-	public Msg move(int id1, int id2, int sort1, int sort2) throws Exception {
-		return roleService.move(id1, id2, sort1, sort2);
 	}
 	
 	/**

@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import com.myframework.common.pojo.Msg;
+import com.myframework.common.web.CommonMoveController;
 import com.myframework.sysmgr.domain.Purview;
 import com.myframework.sysmgr.domain.User;
 import com.myframework.sysmgr.service.PurviewService;
@@ -23,7 +24,7 @@ import com.myframework.sysmgr.service.PurviewService;
  */
 @Controller
 @RequestMapping("/system/purview")
-public class PurviewController {
+public class PurviewController extends CommonMoveController<Purview> {
 	
 	@Autowired
 	private PurviewService purviewService;
@@ -97,19 +98,6 @@ public class PurviewController {
 	@ResponseBody
 	public Msg delete(Integer[] id) throws Exception {
 		return purviewService.disableZtreeEntity(id);
-	}
-	
-	/**
-	 * 上移、下移
-	 * @param id1
-	 * @param id2
-	 * @param sort1
-	 * @param sort2
-	 */
-	@RequestMapping("/move")
-	@ResponseBody
-	public Msg move(int id1, int id2, int sort1, int sort2) throws Exception  {
-		return purviewService.move(id1, id2, sort1, sort2);
 	}
 	
 	/**

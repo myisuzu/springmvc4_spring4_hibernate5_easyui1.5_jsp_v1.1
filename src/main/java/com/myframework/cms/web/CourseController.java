@@ -12,6 +12,7 @@ import com.myframework.cms.service.CourseService;
 import com.myframework.common.pojo.EasyUIDataGrid;
 import com.myframework.common.pojo.Msg;
 import com.myframework.common.util.FlexJsonUtil;
+import com.myframework.common.web.CommonMoveController;
 
 /**
  * 首页全部课程
@@ -21,7 +22,7 @@ import com.myframework.common.util.FlexJsonUtil;
  */
 @Controller
 @RequestMapping("/cms/course")
-public class CourseController {
+public class CourseController extends CommonMoveController<Course> {
 	
 	@Autowired
 	private CourseService courseService;
@@ -92,19 +93,6 @@ public class CourseController {
 	@ResponseBody
 	public Msg delete(Integer[] id) throws Exception {
 		return courseService.deleteZtreeEntity(id);
-	}
-	
-	/**
-	 * 上移、下移
-	 * @param id1
-	 * @param id2
-	 * @param sort1
-	 * @param sort2
-	 */
-	@RequestMapping("/move")
-	@ResponseBody
-	public Msg move(int id1, int id2, int sort1, int sort2) throws Exception {
-		return courseService.move(id1, id2, sort1, sort2);
 	}
 	
 	/**

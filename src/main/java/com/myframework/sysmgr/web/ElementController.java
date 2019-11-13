@@ -7,7 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-import com.myframework.common.pojo.Msg;
+import com.myframework.common.web.CommonAddUpdateDeleteMoveController;
 import com.myframework.sysmgr.domain.Element;
 import com.myframework.sysmgr.service.ElementService;
 
@@ -19,7 +19,7 @@ import com.myframework.sysmgr.service.ElementService;
  */
 @Controller
 @RequestMapping("/system/element")
-public class ElementController {
+public class ElementController extends CommonAddUpdateDeleteMoveController<Element> {
 	
 	@Autowired
 	private ElementService elementService;
@@ -56,49 +56,6 @@ public class ElementController {
 	@RequestMapping("/saveUI")
 	public String saveUI() {
 		return "back/system/element/elementForm";
-	}
-	
-	/**
-	 * 添加
-	 * @param element
-	 */
-	@RequestMapping("/add")
-	@ResponseBody
-	public Msg add(Element element) throws Exception {
-		return elementService.add(element);
-	}
-	
-	/**
-	 * 修改
-	 * @param element
-	 */
-	@RequestMapping("/update")
-	@ResponseBody
-	public Msg update(Element element) throws Exception {
-		return elementService.update(element);
-	}
-	
-	/**
-	 * 删除
-	 * @param id
-	 */
-	@RequestMapping("/delete")
-	@ResponseBody
-	public Msg delete(Integer[] id) throws Exception {
-		return elementService.delete(id);
-	}
-	
-	/**
-	 * 上移、下移
-	 * @param id1
-	 * @param id2
-	 * @param sort1
-	 * @param sort2
-	 */
-	@RequestMapping("/move")
-	@ResponseBody
-	public Msg move(int id1, int id2, int sort1, int sort2) throws Exception {
-		return elementService.move(id1, id2, sort1, sort2);
 	}
 	
 	/**

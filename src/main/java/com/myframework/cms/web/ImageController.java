@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import com.myframework.cms.domain.Image;
 import com.myframework.cms.service.ImageService;
-import com.myframework.common.pojo.Msg;
+import com.myframework.common.web.CommonAddUpdateDeleteMoveController;
 
 /**
  * 学生管理Controller
@@ -18,7 +18,7 @@ import com.myframework.common.pojo.Msg;
  */
 @Controller
 @RequestMapping("/cms/image")
-public class ImageController {
+public class ImageController extends CommonAddUpdateDeleteMoveController<Image> {
 
 	@Autowired
 	private ImageService imageService;
@@ -57,36 +57,6 @@ public class ImageController {
 		Image image = imageService.findById(id);
 		request.setAttribute("image", image);
 		return "back/cms/image/imageForm";
-	}
-	
-	/**
-	 * 添加
-	 * @param image
-	 */
-	@RequestMapping("/add")
-	@ResponseBody
-	public Msg add(Image image) throws Exception {
-		return imageService.add(image);
-	}
-	
-	/**
-	 * 修改
-	 * @param image
-	 */
-	@RequestMapping("/update")
-	@ResponseBody
-	public Msg update(Image image) throws Exception {
-		return imageService.update(image);
-	}
-	
-	/**
-	 * 删除
-	 * @param id
-	 */
-	@RequestMapping("/delete")
-	@ResponseBody
-	public Msg delete(Integer[] id) throws Exception {
-		return imageService.delete(id);
 	}
 	
 }
