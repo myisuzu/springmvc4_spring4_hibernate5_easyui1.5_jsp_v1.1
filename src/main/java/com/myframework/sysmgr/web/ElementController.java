@@ -72,7 +72,7 @@ public class ElementController extends CommonAddUpdateDeleteMoveController<Eleme
 	}
 	
 	/**
-	 * 获取easyui-combotree组建的json数据
+	 * 获取easyui-combotree组件的json数据
 	 * 用于增加、修改权限时为权限指定页面元素类别
 	 * @return
 	 * @throws Exception

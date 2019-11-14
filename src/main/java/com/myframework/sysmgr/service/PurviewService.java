@@ -40,7 +40,7 @@ public class PurviewService extends CommonService<Purview> {
 			purviewDao.add(purview);
 		} catch (Exception e) {
 			e.printStackTrace();
-			throw new RuntimeException(e);
+			return Msg.fail();
 		}
 		return Msg.success();
 	}
@@ -70,7 +70,7 @@ public class PurviewService extends CommonService<Purview> {
 			r.setRemark(purview.getRemark());
 		} catch (Exception e) {
 			e.printStackTrace();
-			throw new RuntimeException(e);
+			return Msg.fail();
 		}
 		return Msg.success();
 	}	
